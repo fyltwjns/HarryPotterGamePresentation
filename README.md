@@ -89,11 +89,22 @@ You can also open `index.html` directly in any modern browser (Chrome, Edge, Fir
    - Class divided into **Team A** and **Team B**.
    - Teams take turns choosing question numbers on the board.
    - Correct answer unlocks the **Mystery Reward**.
-4. **Question Board (Slide 4)**: 4 Hogwarts House zones with 15 questions. Completed questions are marked with a checkmark (✔).
+4. **Question Board (Slide 4)**: 4 Hogwarts House zones with all 16 questions (4 questions per house). Completed questions are marked with a checkmark (✔).
 5. **Question Screen**:
-   - **Red Seal** (Bottom-left): Return to board at any time.
-   - **Green Seal** (Bottom-right): Unlocks upon correct answer to proceed to reward.
+   - **Multiple Choice (Q1-9, Q11-16)**: 2x2 pill-shaped option buttons with instant answer validation.
+   - **Open-Ended Mode (Q10)**: Clean parchment interface; answer "Quasi-" is revealed on click or keyboard press directly on the bottom divider without obstruction.
+   - **Red Seal** (Bottom-left): Return to board at any time (`Esc` or `Left Arrow`).
+   - **Green Seal** (Bottom-right): Unlocks upon correct answer to proceed to reward (`Space` or `Right Arrow`).
 6. **Reward Screen**: Play the unlocked minigame, earn/deduct team points, and click the **Return to Board** crest to switch turns.
+
+### ⌨️ Presenter Keyboard Shortcuts
+| Hotkey | Action |
+| :--- | :--- |
+| `Space` / `Enter` / `➔` | Advance screen / Reveal answer / Enter reward room |
+| `Esc` / `⬅` | Instant return to the 16-Question Board |
+| `T` | Switch active team turn (Team A ⟷ Team B) |
+| `F` | Toggle true fullscreen presentation mode |
+| `M` | Mute / Unmute procedural sound engine |
 
 ---
 

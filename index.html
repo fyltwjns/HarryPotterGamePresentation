@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=MedievalSharp&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 
       <div class="center-controls">
         <div id="current-turn-badge" class="turn-badge team-a">TEAM A'S TURN</div>
-        <button id="btn-toggle-turn" class="btn-switch-turn" title="Switch turn to the other team">🔄 SWITCH TURN</button>
+        <button id="btn-toggle-turn" class="btn-switch-turn" title="Switch turn (Hotkey: T)">🔄 SWITCH TURN</button>
       </div>
 
       <div class="team-score-card team-b-card">
@@ -46,8 +46,8 @@
       </div>
 
       <div class="system-controls">
-        <button id="btn-sound-toggle" class="btn-system-icon" title="Toggle Sound">🔊</button>
-        <button id="btn-fullscreen" class="btn-system-icon" title="Toggle Fullscreen">⛶</button>
+        <button id="btn-sound-toggle" class="btn-system-icon" title="Toggle Sound (Hotkey: M)">🔊</button>
+        <button id="btn-fullscreen" class="btn-system-icon" title="Toggle Fullscreen (Hotkey: F)">⛶</button>
       </div>
     </header>
 
@@ -55,11 +55,12 @@
     <section id="screen-title" class="game-screen active">
       <div class="title-bg-layer">
         <div class="rain-overlay"></div>
-        <div class="lightning-flash"></div>
         <div class="title-content-box">
-          <h1 class="hp-main-title">Harry Potter</h1>
-          <p class="hp-sub-title">and the</p>
-          <h2 class="hp-game-title">GAME of KNOWLEDGE</h2>
+          <img src="assets/image2.png" alt="Harry Potter" class="hp-logo-img">
+          <div class="hp-subtitle-block">
+            <span class="hp-and-the">and the</span>
+            <h2 class="hp-game-title">GAME of KNOWLEDGE</h2>
+          </div>
           <button id="btn-start-game" class="magic-play-button">
             <span>BEGIN JOURNEY</span>
             <div class="wand-glow"></div>
@@ -70,119 +71,102 @@
 
     <!-- SCREEN 2: HOGWARTS ACCEPTANCE LETTER (Slide 2) -->
     <section id="screen-letter" class="game-screen">
-      <div class="parchment-screen-bg">
-        <div class="parchment-content-wrapper letter-layout">
-          <div class="hogwarts-crest-header">
-            <img src="assets/image4.png" alt="Hogwarts Crest" class="large-crest">
-          </div>
-          <h2 class="letter-salutation">Dear Students of SILK ROAD,</h2>
+      <div class="slide-parchment-screen letter-layout">
+        <div class="letter-content-wrapper">
+          <h2 class="letter-salutation">Dear Students of  SILK ROAD,</h2>
           <div class="letter-body">
-            <p>We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry.</p>
-            <p>Your knowledge journey begins now. We await to see which of you will become the top of your class by the end of this game.</p>
+            <p>We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Your knowledge journey begins now. We await to see which of you will become the top of your class by the end of this game.</p>
           </div>
-          <div class="letter-signature">
-            <span class="sig-label">Sincerely,</span>
-            <span class="sig-handwritten">Minerva McGonagall</span>
-          </div>
-          <div class="letter-footer-action">
-            <button id="btn-letter-continue" class="magic-action-btn">CONTINUE TO RULES</button>
+          <div class="letter-signature-area">
+            <span class="sig-sincerely">Sincerely,</span>
+            <img src="assets/image4.png" alt="Minerva McGonagall" class="sig-handwritten-img">
           </div>
         </div>
+        <button id="btn-letter-continue" class="slide-next-btn" title="Continue to Rules (Space / Click)">
+          CONTINUE TO RULES ➔
+        </button>
       </div>
     </section>
 
     <!-- SCREEN 3: RULES (Slide 3) -->
     <section id="screen-rules" class="game-screen">
-      <div class="parchment-screen-bg">
-        <div class="parchment-content-wrapper rules-layout">
-          <div class="rules-header">
-            <img src="assets/image4.png" alt="Hogwarts Crest" class="medium-crest">
-            <h2 class="rules-title">Rule of the Game</h2>
+      <div class="slide-parchment-screen rules-layout">
+        <h2 class="rules-main-title">Rule</h2>
+        <div class="rules-content-wrapper">
+          <div class="rules-text-content">
+            <p class="rule-line">- <strong>Team Division:</strong> The class will be divided into 2 teams (Team A and Team B).</p>
+            <p class="rule-line">- <strong>Turn-taking:</strong> The two teams will take turns choosing a question displayed on the screen.</p>
+            <p class="rule-line">- <strong>Answering:</strong> Each chosen question corresponds to a vocabulary question. The active team must discuss and provide the correct answer.</p>
+            <div class="rule-line rule-scoring">
+              <p>- <strong>Scoring & Mystery Rewards:</strong></p>
+              <p class="rule-sub">+ If the team answers correctly, they will unlock a mystery reward.</p>
+              <p class="rule-sub">+ The reward points are completely random, so be careful with your choice.</p>
+            </div>
+            <p class="rule-line">- <strong>Winning Condition:</strong> The team with the highest score at the end of the game wins!</p>
           </div>
-          <ul class="rules-list">
-            <li>
-              <strong>Team Division:</strong> The class will be divided into 2 teams (Team A and Team B).
-            </li>
-            <li>
-              <strong>Turn-taking:</strong> The two teams will take turns choosing a question displayed on the board.
-            </li>
-            <li>
-              <strong>Answering:</strong> Each chosen number corresponds to a vocabulary challenge. The active team must discuss and provide the correct answer.
-            </li>
-            <li>
-              <strong>Scoring & Mystery Rewards:</strong>
-              <ul>
-                <li>If the team answers correctly, they will unlock a mystery reward.</li>
-                <li>The reward points are completely random, so be careful with your choice.</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Winning Condition:</strong> The team with the highest score at the end of the game wins!
-            </li>
-          </ul>
-          <div class="rules-footer-action">
-            <button id="btn-rules-start" class="magic-action-btn gold-glow">ENTER THE GREAT HALL</button>
+          <div class="letter-signature-area rules-sig">
+            <span class="sig-sincerely">Sincerely,</span>
+            <img src="assets/image4.png" alt="Minerva McGonagall" class="sig-handwritten-img">
           </div>
         </div>
+        <button id="btn-rules-start" class="slide-next-btn gold" title="Enter The Great Hall (Space / Click)">
+          ENTER THE GREAT HALL ➔
+        </button>
       </div>
     </section>
 
-    <!-- SCREEN 4: QUESTION GRID (Slide 4) -->
+    <!-- SCREEN 4: QUESTION BOARD (Slide 4 - 16 Questions) -->
     <section id="screen-grid" class="game-screen">
       <div class="grid-board-container">
         <!-- 4 Houses Background Map -->
         <img src="assets/image5.jpg" class="grid-board-bg" alt="Hogwarts Houses Map">
-        <!-- Interactive 15 Question Buttons -->
+        <!-- 16 Interactive Question Buttons (1 to 16) -->
         <div id="grid-buttons-overlay" class="grid-buttons-overlay">
-          <!-- Populated by JavaScript -->
+          <!-- Populated by JavaScript with exact coordinates -->
         </div>
       </div>
     </section>
 
-    <!-- SCREEN 5-19: QUESTION SCREEN -->
+    <!-- SCREEN 5-19 & 16: QUESTION SCREEN -->
     <section id="screen-question" class="game-screen">
-      <div class="parchment-screen-bg question-layout">
-        <!-- Header Ribbon Decor -->
-        <div class="question-top-decor">
-          <div class="header-flourish"></div>
-          <h2 id="q-title-header" class="q-main-heading">Question 1</h2>
-          <div class="header-flourish"></div>
-        </div>
-
-        <!-- Question Prompt Text -->
-        <div class="question-body-box">
+      <div class="slide-parchment-screen question-slide-layout">
+        <!-- Question Prompt Area -->
+        <div class="question-header-container">
           <p id="q-text-content" class="question-text">Loading question text...</p>
         </div>
 
-        <!-- Multiple Choice Options Grid (A, B, C, D) -->
-        <div id="q-options-container" class="options-container">
+        <!-- Multiple Choice Options 2x2 Grid (A, B, C, D) -->
+        <div id="q-options-container" class="options-2x2-grid">
           <!-- Populated by JavaScript -->
         </div>
 
-        <!-- Open-ended Reveal Area (for Q10) -->
-        <div id="q-openended-container" class="openended-container" style="display:none;">
-          <p class="openended-hint">Discuss with your team and answer orally before revealing the answer!</p>
-          <button id="btn-reveal-answer" class="magic-action-btn pulse">REVEAL ANSWER</button>
+        <!-- Open-ended container for Q10 (Clean and uncluttered) -->
+        <div id="q-openended-container" class="openended-layout" style="display:none;">
+          <button id="btn-reveal-answer" class="btn-reveal-pill" title="Reveal the official answer">
+            👁 CLICK TO REVEAL ANSWER
+          </button>
         </div>
 
-        <!-- Bottom Correct Answer Banner (Slide-in fade animation) -->
-        <div id="q-correct-banner" class="correct-answer-banner">
+        <!-- Bottom Black Horizontal Divider Line -->
+        <div class="slide-bottom-divider"></div>
+
+        <!-- Center Correct Answer Banner (Directly on horizontal line, exactly like slide) -->
+        <div id="q-correct-banner" class="slide-correct-answer-banner">
           B. Antiquity
         </div>
 
-        <!-- Bottom Navigation Seal Buttons -->
-        <!-- Red Seal (Left): Back to Question Board -->
-        <div id="btn-q-red" class="seal-button seal-red" title="Return to Question Board">
-          <img src="assets/image7.png" class="seal-wax" alt="Red Seal">
-          <img src="assets/image8.png" class="seal-crest" alt="Gryffindor Crest">
-          <span class="seal-tooltip">RETURN TO BOARD</span>
+        <!-- Bottom Left Red Wax Seal (Return to Board) -->
+        <div id="btn-q-red" class="seal-container seal-left-red" title="Return to Board (Hotkey: Esc / Left Arrow)">
+          <img src="assets/image7.png" class="seal-wax-img" alt="Red Wax">
+          <img src="assets/image8.png" class="seal-crest-img" alt="Crest">
+          <span class="seal-label">BOARD</span>
         </div>
 
-        <!-- Green Seal (Right): Proceed to Reward Screen -->
-        <div id="btn-q-green" class="seal-button seal-green" title="Claim Mystery Reward">
-          <img src="assets/image9.png" class="seal-wax" alt="Green Seal">
-          <img src="assets/image10.png" class="seal-crest" alt="Slytherin Crest">
-          <span class="seal-tooltip">CLAIM REWARD</span>
+        <!-- Bottom Right Green Wax Seal (Claim Mystery Reward) -->
+        <div id="btn-q-green" class="seal-container seal-right-green" title="Claim Reward (Hotkey: Space / Right Arrow)">
+          <img src="assets/image9.png" class="seal-wax-img" alt="Green Wax">
+          <img src="assets/image10.png" class="seal-crest-img" alt="Crest">
+          <span class="seal-label">REWARD</span>
         </div>
       </div>
     </section>
@@ -192,6 +176,34 @@
       <div class="reward-viewport">
         <!-- Minigames are loaded dynamically into this container -->
         <div id="reward-minigame-container" class="reward-minigame-container"></div>
+      </div>
+    </section>
+
+    <!-- PENALTY SCREEN (Hiệu ứng Slide Hình Phạt khi trả lời sai) -->
+    <section id="screen-penalty" class="game-screen penalty-screen-overlay">
+      <div class="penalty-modal-card">
+        <div class="penalty-media-box">
+          <img id="penalty-gif" src="assets/image44.gif" alt="Penalty GIF" class="penalty-gif-img">
+          <div class="penalty-dark-overlay"></div>
+        </div>
+        <div class="penalty-info-box">
+          <div class="penalty-flourish">⚡ ⚡ ⚡</div>
+          <h2 id="penalty-title" class="penalty-title">INCORRECT ANSWER!</h2>
+          <p id="penalty-subtitle" class="penalty-subtitle">You were caught by the Dursleys!</p>
+          <div class="penalty-badge-container">
+            <img id="penalty-pts-img" src="assets/image37.png" alt="Penalty Points" class="penalty-pts-graphic">
+          </div>
+          <p id="penalty-team-msg" class="penalty-team-msg">Team A lost turn & 1 point penalty!</p>
+          <div class="penalty-actions">
+            <button id="btn-penalty-return" class="penalty-action-btn primary" title="Return to Question Board">
+              <img src="assets/image31.png" alt="Return">
+              <span>RETURN TO BOARD</span>
+            </button>
+            <button id="btn-penalty-retry" class="penalty-action-btn secondary" title="Let other team steal or retry">
+              <span>ALLOW STEAL / RETRY</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 

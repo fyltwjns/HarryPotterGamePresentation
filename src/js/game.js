@@ -121,13 +121,8 @@ const QUESTIONS_DATA = [
     number: 10,
     question: 'Question 10: When you want to describe a status that is "almost, but not completely official", what prefix should you use?',
     isOpenEnded: true,
-    options: {
-      A: "A. Quasi-",
-      B: "B. Semi-",
-      C: "C. Pseudo-",
-      D: "D. Sub-"
-    },
-    correct: "A",
+    options: {},
+    correct: "Quasi-",
     correctText: "Quasi-",
     rewardType: "cards2"
   },
@@ -195,6 +190,19 @@ const QUESTIONS_DATA = [
     correct: "B",
     correctText: "B. Melting pot",
     rewardType: "patronus"
+  },
+  {
+    number: 16,
+    question: 'Question 16: Which term defines "an inn with a central courtyard for travelers in the desert regions of Asia or North Africa"?',
+    options: {
+      A: "A. Caravanserai",
+      B: "B. Pilgrimage",
+      C: "C. Antiquity",
+      D: "D. Almanac"
+    },
+    correct: "A",
+    correctText: "A. Caravanserai",
+    rewardType: "snitch"
   }
 ];
 
@@ -209,8 +217,10 @@ class HogwartsGame {
 
     this.initElements();
     this.bindEvents();
+    this.bindKeyboardShortcuts();
     this.updateScoreboard();
     this.renderQuestionGrid();
+    this.switchScreen('title');
   }
 
   initElements() {
@@ -220,7 +230,8 @@ class HogwartsGame {
       rules: document.getElementById('screen-rules'),
       grid: document.getElementById('screen-grid'),
       question: document.getElementById('screen-question'),
-      reward: document.getElementById('screen-reward')
+      reward: document.getElementById('screen-reward'),
+      penalty: document.getElementById('screen-penalty')
     };
 
     this.scoreAEl = document.getElementById('score-team-a');
@@ -230,11 +241,32 @@ class HogwartsGame {
   }
 
   bindEvents() {
-    // Screen navigation
-    document.getElementById('btn-start-game').addEventListener('click', () => {
-      window.soundEngine.playWandSpell();
+    // Screen navigation - Start Journey
+    const startJourney = () => {
+      try {
+        if (window.soundEngine) window.soundEngine.playWandSpell();
+      } catch (err) {
+        console.warn('Audio play error:', err);
+      }
       this.switchScreen('letter');
-    });
+    };
+
+    const btnStart = document.getElementById('btn-start-game');
+    if (btnStart) {
+      btnStart.addEventListener('click', (e) => {
+        e.stopPropagation();
+        startJourney();
+      });
+    }
+
+    const screenTitle = document.getElementById('screen-title');
+    if (screenTitle) {
+      screenTitle.addEventListener('click', () => {
+        if (this.currentScreen === 'title') {
+          startJourney();
+        }
+      });
+    }
 
     document.getElementById('btn-letter-continue').addEventListener('click', () => {
       window.soundEngine.playClick();
@@ -274,8 +306,75 @@ class HogwartsGame {
     });
 
     // Open-ended reveal button (for Q10)
-    document.getElementById('btn-reveal-answer').addEventListener('click', () => {
+    document.getElementById('btn-reveal-answer').addEventListener('click', (e) => {
+      e.stopPropagation();
       this.handleCorrectAnswer();
+    });
+
+    // Clicking anywhere on question screen for Q10 reveals answer
+    document.getElementById('screen-question').addEventListener('click', (e) => {
+      const qData = QUESTIONS_DATA[this.currentQuestionIdx];
+      if (qData && qData.isOpenEnded && !this.answeredCorrectly) {
+        // Avoid clicks on seal buttons
+        if (!e.target.closest('.seal-container')) {
+          this.handleCorrectAnswer();
+        }
+      }
+    });
+
+    // Penalty screen buttons
+    document.getElementById('btn-penalty-return').addEventListener('click', () => {
+      if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
+      this.toggleTurn();
+      this.switchScreen('grid');
+    });
+
+    document.getElementById('btn-penalty-retry').addEventListener('click', () => {
+      if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
+      this.toggleTurn();
+      this.switchScreen('question');
+    });
+  }
+
+  bindKeyboardShortcuts() {
+    window.addEventListener('keydown', (e) => {
+      // Hotkeys for presenter
+      if (e.code === 'KeyF') {
+        this.toggleFullscreen();
+      } else if (e.code === 'KeyM') {
+        const isMuted = window.soundEngine.toggleMute();
+        document.getElementById('btn-sound-toggle').innerHTML = isMuted ? '🔇' : '🔊';
+      } else if (e.code === 'KeyT') {
+        this.toggleTurn();
+      } else if (e.code === 'Escape' || e.code === 'ArrowLeft') {
+        if (this.currentScreen === 'question' || this.currentScreen === 'reward' || this.currentScreen === 'penalty') {
+          if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
+          window.soundEngine.playClick();
+          if (this.currentScreen === 'penalty') this.toggleTurn();
+          this.switchScreen('grid');
+        }
+      } else if (e.code === 'Space' || e.code === 'ArrowRight' || e.code === 'Enter') {
+        if (this.currentScreen === 'title') {
+          window.soundEngine.playWandSpell();
+          this.switchScreen('letter');
+        } else if (this.currentScreen === 'letter') {
+          window.soundEngine.playClick();
+          this.switchScreen('rules');
+        } else if (this.currentScreen === 'rules') {
+          window.soundEngine.playWandSpell();
+          this.switchScreen('grid');
+        } else if (this.currentScreen === 'penalty') {
+          if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
+          this.toggleTurn();
+          this.switchScreen('grid');
+        } else if (this.currentScreen === 'question') {
+          if (!this.answeredCorrectly) {
+            this.handleCorrectAnswer();
+          } else {
+            this.openRewardScreen();
+          }
+        }
+      }
     });
   }
 
@@ -326,26 +425,31 @@ class HogwartsGame {
     const gridContainer = document.getElementById('grid-buttons-overlay');
     gridContainer.innerHTML = '';
 
-    // Positions for 15 question numbers based on Hogwarts Houses in Slide 4
+    // Precise relative coordinates for 16 question numbers from original Slide 4
+    // Gryffindor: 1, 2, 3, 4
+    // Slytherin: 5, 6, 7, 8
+    // Hufflepuff: 9, 10, 11, 12
+    // Ravenclaw: 13, 14, 15, 16
     const positions = [
-      { num: 1, x: 7.2, y: 15.0 },
-      { num: 2, x: 17.5, y: 15.0 },
-      { num: 3, x: 7.2, y: 39.5 },
-      { num: 4, x: 17.5, y: 39.5 },
+      { num: 1, x: 5.6, y: 12.0 },
+      { num: 2, x: 16.0, y: 12.0 },
+      { num: 3, x: 5.6, y: 32.5 },
+      { num: 4, x: 16.0, y: 32.5 },
 
-      { num: 5, x: 77.2, y: 15.0 },
-      { num: 6, x: 88.5, y: 15.0 },
-      { num: 7, x: 77.2, y: 39.5 },
-      { num: 8, x: 88.5, y: 39.5 },
+      { num: 5, x: 76.0, y: 12.0 },
+      { num: 6, x: 87.5, y: 12.0 },
+      { num: 7, x: 76.0, y: 32.5 },
+      { num: 8, x: 87.5, y: 32.5 },
 
-      { num: 9, x: 7.5, y: 69.5 },
-      { num: 10, x: 18.5, y: 69.5 },
-      { num: 11, x: 7.5, y: 88.0 },
-      { num: 12, x: 18.5, y: 88.0 },
+      { num: 9, x: 6.2, y: 62.5 },
+      { num: 10, x: 16.0, y: 62.5 },
+      { num: 11, x: 4.8, y: 82.5 },
+      { num: 12, x: 16.0, y: 82.5 },
 
-      { num: 13, x: 77.0, y: 68.0 },
-      { num: 14, x: 88.5, y: 68.0 },
-      { num: 15, x: 77.0, y: 88.0 }
+      { num: 13, x: 74.5, y: 61.5 },
+      { num: 14, x: 86.0, y: 61.5 },
+      { num: 15, x: 74.5, y: 82.5 },
+      { num: 16, x: 86.5, y: 82.5 }
     ];
 
     positions.forEach(p => {
@@ -368,12 +472,19 @@ class HogwartsGame {
   }
 
   openQuestion(qIdx) {
+    if (this.autoRewardTimer) {
+      clearTimeout(this.autoRewardTimer);
+      this.autoRewardTimer = null;
+    }
+    if (this.penaltyTimer) {
+      clearTimeout(this.penaltyTimer);
+      this.penaltyTimer = null;
+    }
     this.currentQuestionIdx = qIdx;
     const qData = QUESTIONS_DATA[qIdx];
     this.answeredCorrectly = false;
 
-    // Reset UI
-    document.getElementById('q-title-header').textContent = `Question ${qData.number}`;
+    // Reset Question UI
     document.getElementById('q-text-content').textContent = qData.question;
     
     const bannerEl = document.getElementById('q-correct-banner');
@@ -390,17 +501,24 @@ class HogwartsGame {
     if (qData.isOpenEnded) {
       optionsContainer.style.display = 'none';
       openEndedContainer.style.display = 'flex';
+      const revealBtn = document.getElementById('btn-reveal-answer');
+      if (revealBtn) revealBtn.style.display = 'block';
+      bannerEl.classList.add('openended-mode');
     } else {
       optionsContainer.style.display = 'grid';
       openEndedContainer.style.display = 'none';
+      bannerEl.classList.remove('openended-mode');
 
-      ['A', 'B', 'C', 'D'].forEach(letter => {
+      // 2x2 layout: Column 1 = A, C; Column 2 = B, D
+      const orderedLetters = ['A', 'B', 'C', 'D'];
+      orderedLetters.forEach(letter => {
         if (!qData.options[letter]) return;
         const optBtn = document.createElement('button');
-        optBtn.className = 'option-btn';
+        optBtn.className = 'pill-option-btn';
         optBtn.textContent = qData.options[letter];
 
-        optBtn.addEventListener('click', () => {
+        optBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
           if (this.answeredCorrectly) return;
           this.handleAnswerChoice(optBtn, letter, qData.correct);
         });
@@ -421,11 +539,15 @@ class HogwartsGame {
       btn.classList.add('wrong');
       window.soundEngine.playWrong();
       
-      // Penalty animation
       btn.classList.add('shake-anim');
       setTimeout(() => btn.classList.remove('shake-anim'), 600);
 
-      this.showToast('Incorrect answer! Beware of penalties or losing your turn!', 'error');
+      // Trigger Penalty Slide Animation & Modal
+      setTimeout(() => {
+        if (!this.answeredCorrectly) {
+          this.triggerPenaltySlide();
+        }
+      }, 550);
     }
   }
 
@@ -433,19 +555,95 @@ class HogwartsGame {
     this.answeredCorrectly = true;
     window.soundEngine.playCorrect();
 
-    // Show correct answer banner (Slide in from bottom)
+    // Show correct answer banner (Slide in from bottom, never obscured)
     const bannerEl = document.getElementById('q-correct-banner');
     bannerEl.classList.add('show');
 
-    // Glow green button
+    // Hide reveal button in open-ended mode once revealed
+    const revealBtn = document.getElementById('btn-reveal-answer');
+    if (revealBtn) revealBtn.style.display = 'none';
+
+    // Glow green seal
     const greenBtn = document.getElementById('btn-q-green');
     greenBtn.classList.add('glow', 'enabled');
 
     this.triggerMagicSparks();
-    this.showToast('Brilliant! Click the green wax seal on the right to claim your reward!', 'success');
+    this.showToast('Brilliant! Entering mystery reward room...', 'success');
+
+    // Automatically transition to reward screen without waiting for manual click
+    if (this.autoRewardTimer) clearTimeout(this.autoRewardTimer);
+    this.autoRewardTimer = setTimeout(() => {
+      if (this.currentScreen === 'question') {
+        this.openRewardScreen();
+      }
+    }, 1100);
+  }
+
+  triggerPenaltySlide() {
+    const penalties = [
+      {
+        gif: 'assets/image44.gif',
+        title: 'INCORRECT ANSWER!',
+        subtitle: 'You were caught by the Dursleys!',
+        ptsImg: 'assets/image37.png',
+        ptsDeduction: -1,
+        msg: `${this.activeTeam === 'A' ? 'TEAM A' : 'TEAM B'} lost turn & -1 point penalty!`
+      },
+      {
+        gif: 'assets/image61.gif',
+        title: 'DUEL DEFEAT!',
+        subtitle: 'Overpowered by your Slytherin rival!',
+        ptsImg: 'assets/image62.png',
+        ptsDeduction: -1,
+        msg: `${this.activeTeam === 'A' ? 'TEAM A' : 'TEAM B'} lost turn & -1 point penalty!`
+      },
+      {
+        gif: 'assets/image66.gif',
+        title: 'VOLDEMORT ATTACKS!',
+        subtitle: 'A dark curse was cast upon Hogwarts!',
+        ptsImg: 'assets/image67.png',
+        ptsDeduction: -1,
+        msg: `${this.activeTeam === 'A' ? 'TEAM A' : 'TEAM B'} lost turn & -1 point penalty!`
+      },
+      {
+        gif: 'assets/image94.gif',
+        title: 'HIPPOGRIFF STRIKES!',
+        subtitle: 'The Hippogriff sees you as an enemy!',
+        ptsImg: 'assets/image49.png',
+        ptsDeduction: -1,
+        msg: `${this.activeTeam === 'A' ? 'TEAM A' : 'TEAM B'} lost turn & -1 point penalty!`
+      }
+    ];
+
+    const p = penalties[Math.floor(Math.random() * penalties.length)];
+
+    document.getElementById('penalty-gif').src = p.gif;
+    document.getElementById('penalty-title').textContent = p.title;
+    document.getElementById('penalty-subtitle').textContent = p.subtitle;
+    document.getElementById('penalty-pts-img').src = p.ptsImg;
+    document.getElementById('penalty-team-msg').textContent = p.msg;
+
+    // Deduct points from active team
+    this.adjustScore(this.activeTeam, p.ptsDeduction);
+
+    this.switchScreen('penalty');
+    window.soundEngine.playWrong();
+
+    // Automatically return to board after 4 seconds
+    if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
+    this.penaltyTimer = setTimeout(() => {
+      if (this.currentScreen === 'penalty') {
+        this.toggleTurn();
+        this.switchScreen('grid');
+      }
+    }, 4000);
   }
 
   openRewardScreen() {
+    if (this.autoRewardTimer) {
+      clearTimeout(this.autoRewardTimer);
+      this.autoRewardTimer = null;
+    }
     if (!this.answeredCorrectly) {
       const confirmOpen = confirm("Answer has not been confirmed! Do you still want to enter the reward room?");
       if (!confirmOpen) return;
@@ -489,7 +687,7 @@ class HogwartsGame {
     }
   }
 
-  // ==================== 15 MINIGAMES IMPLEMENTATION (100% ENGLISH) ====================
+  // ==================== 15 MINIGAMES IMPLEMENTATION ====================
   loadMinigame(questionNum, type) {
     const container = document.getElementById('reward-minigame-container');
     container.innerHTML = '';
@@ -502,7 +700,7 @@ class HogwartsGame {
         <span class="reward-badge">QUESTION ${questionNum} REWARD</span>
         <h2 id="reward-main-title" class="reward-title">Hogwarts Mystery Reward</h2>
       </div>
-      <button class="btn-crest-return" title="Return to 15 questions board">
+      <button class="btn-crest-return" title="Return to 16 questions board">
         <img src="assets/image31.png" alt="Return">
         <span>RETURN TO BOARD</span>
       </button>
@@ -1038,7 +1236,7 @@ class HogwartsGame {
     });
   }
 
-  // 13. Catch the golden snitch for 10pts! (Slide 40)
+  // 13 & 16. Catch the golden snitch for 10pts! (Slide 40)
   renderSnitchWheelMinigame(container) {
     document.getElementById('reward-main-title').textContent = "Catch the golden snitch for 10pts!";
     container.innerHTML = `
