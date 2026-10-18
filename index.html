@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter and the Game of Knowledge</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=MedievalSharp&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 16:9 1920x1080 Viewport Scaler -->
+  <div id="app-viewport">
+
+    <!-- Global Floating Scoreboard Bar -->
+    <header id="global-scoreboard" class="global-scoreboard hidden">
+      <div class="team-score-card team-a-card">
+        <div class="house-crest-small crest-gryffindor">🦁</div>
+        <div class="team-meta">
+          <span class="team-name">TEAM A</span>
+          <span id="score-team-a" class="team-score">0</span>
+        </div>
+        <div class="quick-adjust">
+          <button id="btn-add-a" class="btn-micro" title="Add 1 point">+1</button>
+          <button id="btn-sub-a" class="btn-micro" title="Deduct 1 point">-1</button>
+        </div>
+      </div>
+
+      <div class="center-controls">
+        <div id="current-turn-badge" class="turn-badge team-a">TEAM A'S TURN</div>
+        <button id="btn-toggle-turn" class="btn-switch-turn" title="Switch turn to the other team">🔄 SWITCH TURN</button>
+      </div>
+
+      <div class="team-score-card team-b-card">
+        <div class="quick-adjust">
+          <button id="btn-add-b" class="btn-micro" title="Add 1 point">+1</button>
+          <button id="btn-sub-b" class="btn-micro" title="Deduct 1 point">-1</button>
+        </div>
+        <div class="team-meta">
+          <span class="team-name">TEAM B</span>
+          <span id="score-team-b" class="team-score">0</span>
+        </div>
+        <div class="house-crest-small crest-slytherin">🐍</div>
+      </div>
+
+      <div class="system-controls">
+        <button id="btn-sound-toggle" class="btn-system-icon" title="Toggle Sound">🔊</button>
+        <button id="btn-fullscreen" class="btn-system-icon" title="Toggle Fullscreen">⛶</button>
+      </div>
+    </header>
+
+    <!-- SCREEN 1: TITLE SCREEN (Slide 1) -->
+    <section id="screen-title" class="game-screen active">
+      <div class="title-bg-layer">
+        <div class="rain-overlay"></div>
+        <div class="lightning-flash"></div>
+        <div class="title-content-box">
+          <h1 class="hp-main-title">Harry Potter</h1>
+          <p class="hp-sub-title">and the</p>
+          <h2 class="hp-game-title">GAME of KNOWLEDGE</h2>
+          <button id="btn-start-game" class="magic-play-button">
+            <span>BEGIN JOURNEY</span>
+            <div class="wand-glow"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: HOGWARTS ACCEPTANCE LETTER (Slide 2) -->
+    <section id="screen-letter" class="game-screen">
+      <div class="parchment-screen-bg">
+        <div class="parchment-content-wrapper letter-layout">
+          <div class="hogwarts-crest-header">
+            <img src="assets/image4.png" alt="Hogwarts Crest" class="large-crest">
+          </div>
+          <h2 class="letter-salutation">Dear Students of SILK ROAD,</h2>
+          <div class="letter-body">
+            <p>We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry.</p>
+            <p>Your knowledge journey begins now. We await to see which of you will become the top of your class by the end of this game.</p>
+          </div>
+          <div class="letter-signature">
+            <span class="sig-label">Sincerely,</span>
+            <span class="sig-handwritten">Minerva McGonagall</span>
+          </div>
+          <div class="letter-footer-action">
+            <button id="btn-letter-continue" class="magic-action-btn">CONTINUE TO RULES</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: RULES (Slide 3) -->
+    <section id="screen-rules" class="game-screen">
+      <div class="parchment-screen-bg">
+        <div class="parchment-content-wrapper rules-layout">
+          <div class="rules-header">
+            <img src="assets/image4.png" alt="Hogwarts Crest" class="medium-crest">
+            <h2 class="rules-title">Rule of the Game</h2>
+          </div>
+          <ul class="rules-list">
+            <li>
+              <strong>Team Division:</strong> The class will be divided into 2 teams (Team A and Team B).
+            </li>
+            <li>
+              <strong>Turn-taking:</strong> The two teams will take turns choosing a question displayed on the board.
+            </li>
+            <li>
+              <strong>Answering:</strong> Each chosen number corresponds to a vocabulary challenge. The active team must discuss and provide the correct answer.
+            </li>
+            <li>
+              <strong>Scoring & Mystery Rewards:</strong>
+              <ul>
+                <li>If the team answers correctly, they will unlock a mystery reward.</li>
+                <li>The reward points are completely random, so be careful with your choice.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Winning Condition:</strong> The team with the highest score at the end of the game wins!
+            </li>
+          </ul>
+          <div class="rules-footer-action">
+            <button id="btn-rules-start" class="magic-action-btn gold-glow">ENTER THE GREAT HALL</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: QUESTION GRID (Slide 4) -->
+    <section id="screen-grid" class="game-screen">
+      <div class="grid-board-container">
+        <!-- 4 Houses Background Map -->
+        <img src="assets/image5.jpg" class="grid-board-bg" alt="Hogwarts Houses Map">
+        <!-- Interactive 15 Question Buttons -->
+        <div id="grid-buttons-overlay" class="grid-buttons-overlay">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5-19: QUESTION SCREEN -->
+    <section id="screen-question" class="game-screen">
+      <div class="parchment-screen-bg question-layout">
+        <!-- Header Ribbon Decor -->
+        <div class="question-top-decor">
+          <div class="header-flourish"></div>
+          <h2 id="q-title-header" class="q-main-heading">Question 1</h2>
+          <div class="header-flourish"></div>
+        </div>
+
+        <!-- Question Prompt Text -->
+        <div class="question-body-box">
+          <p id="q-text-content" class="question-text">Loading question text...</p>
+        </div>
+
+        <!-- Multiple Choice Options Grid (A, B, C, D) -->
+        <div id="q-options-container" class="options-container">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Open-ended Reveal Area (for Q10) -->
+        <div id="q-openended-container" class="openended-container" style="display:none;">
+          <p class="openended-hint">Discuss with your team and answer orally before revealing the answer!</p>
+          <button id="btn-reveal-answer" class="magic-action-btn pulse">REVEAL ANSWER</button>
+        </div>
+
+        <!-- Bottom Correct Answer Banner (Slide-in fade animation) -->
+        <div id="q-correct-banner" class="correct-answer-banner">
+          B. Antiquity
+        </div>
+
+        <!-- Bottom Navigation Seal Buttons -->
+        <!-- Red Seal (Left): Back to Question Board -->
+        <div id="btn-q-red" class="seal-button seal-red" title="Return to Question Board">
+          <img src="assets/image7.png" class="seal-wax" alt="Red Seal">
+          <img src="assets/image8.png" class="seal-crest" alt="Gryffindor Crest">
+          <span class="seal-tooltip">RETURN TO BOARD</span>
+        </div>
+
+        <!-- Green Seal (Right): Proceed to Reward Screen -->
+        <div id="btn-q-green" class="seal-button seal-green" title="Claim Mystery Reward">
+          <img src="assets/image9.png" class="seal-wax" alt="Green Seal">
+          <img src="assets/image10.png" class="seal-crest" alt="Slytherin Crest">
+          <span class="seal-tooltip">CLAIM REWARD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 20-42: REWARD MINIGAMES SCREEN -->
+    <section id="screen-reward" class="game-screen">
+      <div class="reward-viewport">
+        <!-- Minigames are loaded dynamically into this container -->
+        <div id="reward-minigame-container" class="reward-minigame-container"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="src/js/audio.js"></script>
+  <script src="src/js/game.js"></script>
+</body>
+</html>

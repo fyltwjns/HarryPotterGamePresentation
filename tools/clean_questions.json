@@ -1,0 +1,177 @@
+[
+  {
+    "number": 1,
+    "slide": 5,
+    "question": "Question 1: Which word matches the definition \"referring to the ancient past, especially the period before the Middle Ages\"?",
+    "options": {
+      "A": "A. Medieval",
+      "C": "C. Quasi-",
+      "D": "D. Underbelly",
+      "B": "B. Antiquity"
+    },
+    "correct": "B. Antiquity"
+  },
+  {
+    "number": 2,
+    "slide": 6,
+    "question": "Question 2: “Many quasi-legendary katana were created by the hand of many famous Japanese swordsmith”. What does the prefix/word \"Quasi-\" mean?",
+    "options": {
+      "A": "A. Related to the \rMiddle Ages",
+      "C": "C. A wise saying",
+      "D": "D. The weakest or most unpleasant part of something",
+      "B": "B. Used to show that something is almost, but not completely, the thing described"
+    },
+    "correct": "B. Used to show that something is almost, but not completely, the thing described"
+  },
+  {
+    "number": 3,
+    "slide": 7,
+    "question": "Question 3: Which term defines \"the weakest or most unpleasant part of something\"?",
+    "options": {
+      "A": "A. Underbelly",
+      "C": "C. Almanac",
+      "B": "B. Filament",
+      "D": "D. Caravanserai"
+    },
+    "correct": "A. Underbelly"
+  },
+  {
+    "number": 4,
+    "slide": 8,
+    "question": "Question 4: Which word corresponds to \"related to the Middle Ages (= the period in European history from about AD 600 to AD 1500)\"?",
+    "options": {
+      "A": "A. Antiquity",
+      "C": "C. Medieval",
+      "B": "B. Enamored",
+      "D": "D. Quasi-"
+    },
+    "correct": "C. Medieval"
+  },
+  {
+    "number": 5,
+    "slide": 9,
+    "question": "Question 5: “The adage ‘Time is money’ teaches us to value our time.” What is the exact meaning of the word \"Adage\"?",
+    "options": {
+      "A": "A. A thin thread or fibre of natural or artificial material",
+      "C": "C. An annual publication providing various information",
+      "D": "D. Marked by a great liking or admiration",
+      "B": "B. A wise saying"
+    },
+    "correct": "B. A wise saying"
+  },
+  {
+    "number": 6,
+    "slide": 10,
+    "question": "Question 6: Which term describes someone or something \"marked by a great liking or admiration for something\"?",
+    "options": {
+      "A": "A. Enamored",
+      "C": "C. Medieval",
+      "B": "B. Filament",
+      "D": "D. Antiquity"
+    },
+    "correct": "A. Enamored"
+  },
+  {
+    "number": 7,
+    "slide": 11,
+    "question": "Question 7: Which publication is defined as \"an annual publication that provides a variety of information, typically related to weather forecasts, astronomical data, holidays, notable events...\"?",
+    "options": {
+      "A": "A. Caravanserai",
+      "C": "C. Almanac",
+      "B": "B. Adage",
+      "D": "D. Filament"
+    },
+    "correct": "C. Almanac"
+  },
+  {
+    "number": 8,
+    "slide": 12,
+    "question": "Question 8: “The filament inside the old light bulb burned out, leaving the room in darkness.” What does the word \"Filament\" mean?",
+    "options": {
+      "A": "A. The weakest or most unpleasant part of something",
+      "C": "C. An inn with a central courtyard in the desert",
+      "B": "B. A thin thread or fibre of natural or artificial material",
+      "D": "D.  A wise saying"
+    },
+    "correct": "B. A thin thread or fibre of natural or artificial material"
+  },
+  {
+    "number": 9,
+    "slide": 13,
+    "question": "Question 9: Which of the following words means \"to suppose that something is true without having evidence to confirm it\" ?",
+    "options": {
+      "A": "A. Deduce",
+      "C": "C. Assert",
+      "B": "B. Surmise",
+      "D": "D. Verify"
+    },
+    "correct": "B. Surmise"
+  },
+  {
+    "number": 10,
+    "slide": 14,
+    "question": "Question 10: When you want to describe a status that is \"almost, but not completely official\", what prefix should you use?",
+    "options": {},
+    "correct": "Quasi-"
+  },
+  {
+    "number": 11,
+    "slide": 15,
+    "question": "Question 11: Which word matches the definition \"wealthy or prosperous\"?",
+    "options": {
+      "A": "A. Asphalt",
+      "C": "C. Apocryphal",
+      "B": "B. Affluent",
+      "D": "D. Genocide"
+    },
+    "correct": "B. Affluent"
+  },
+  {
+    "number": 12,
+    "slide": 16,
+    "question": "Question 12: “The workers are laying a new layer of asphalt on the playground.” .What does the word \"Asphalt\" mean?",
+    "options": {
+      "A": "A. A dark, sticky substance, often mixed with small stones or sand, that forms a strong surface when hard",
+      "C": "C. The crime of intentionally destroying part or all of a national or ethnic group",
+      "B": "B. A place where different cultures, ideas or traditions are mixed together",
+      "D": "D. A journey or travel of a religious nature to a sacred destination"
+    },
+    "correct": "A. A dark, sticky substance, often mixed with small stones or sand, that forms a strong surface when hard"
+  },
+  {
+    "number": 13,
+    "slide": 17,
+    "question": "Question 13: Which term defines \"of doubtful authenticity, although widely circulated as being true\"?",
+    "options": {
+      "A": "A. Pilgrimage",
+      "C": "C. Apocryphal",
+      "B": "B. Melting pot",
+      "D": "D. Affluent"
+    },
+    "correct": "C. Apocryphal"
+  },
+  {
+    "number": 14,
+    "slide": 18,
+    "question": "Question 14: Which word refers to \"the crime of intentionally destroying part or all of a national, ethnic, racial, or religious group\"?",
+    "options": {
+      "A": "A. Genocide",
+      "C": "C. Apocryphal",
+      "B": "B. Asphalt",
+      "D": "D. Melting pot"
+    },
+    "correct": "A. Genocide"
+  },
+  {
+    "number": 15,
+    "slide": 19,
+    "question": "Question 15: Which term describes \"a place where different cultures, ideas or traditions are mixed together\"?",
+    "options": {
+      "A": "A. Pilgrimage",
+      "C": "C. Affluent",
+      "B": "B. Melting pot",
+      "D": "D. Asphalt"
+    },
+    "correct": "B. Melting pot"
+  }
+]
