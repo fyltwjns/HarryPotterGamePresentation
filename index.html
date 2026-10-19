@@ -124,6 +124,20 @@
         <div id="grid-buttons-overlay" class="grid-buttons-overlay">
           <!-- Populated by JavaScript with exact coordinates -->
         </div>
+
+        <!-- Grand Finale Trigger Banner (Appears when all 16 questions completed) -->
+        <div id="grid-finale-banner" class="grid-finale-banner hidden">
+          <div class="finale-banner-card">
+            <div class="finale-banner-icon">🏆</div>
+            <div class="finale-banner-text">
+              <h3>ALL 16 QUESTIONS COMPLETED!</h3>
+              <p>The Houses have proven their magical knowledge. Gather for the House Cup Ceremony!</p>
+            </div>
+            <button id="btn-enter-finale" class="btn-enter-finale" title="Announce Final Scores & Champion">
+              <span>🏆 ANNOUNCE THE WINNER</span> ➔
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -269,6 +283,133 @@
             <h2 id="ab-outcome-headline" class="ab-outcome-headline">Welcome to Hogwarts!</h2>
             <p id="ab-outcome-details" class="ab-outcome-details">You safely caught your Hogwarts letter! 0 Points Penalty.</p>
             <div id="ab-outcome-badge" class="ab-outcome-badge safe">✨ SAFE: 0 PTS PENALTY ✨</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN: GRAND FINALE & HOUSE CUP CEREMONY (All 16 Questions Completed) -->
+    <section id="screen-finale" class="game-screen finale-screen">
+      <div class="finale-viewport">
+        <!-- Background Great Hall with floating candles -->
+        <img src="assets/image32.jpg" class="finale-bg-img" alt="The Great Hall">
+        <div class="finale-scrim"></div>
+
+        <!-- Floating Magic Sparks Container -->
+        <div id="finale-sparks-container" class="finale-sparks-container"></div>
+
+        <div class="finale-content-stage">
+          <!-- Header Block -->
+          <div class="finale-header-block">
+            <div class="finale-crest-badge">
+              <img src="assets/image10.png" alt="Hogwarts Seal" class="finale-seal-img">
+            </div>
+            <h1 class="finale-grand-title">THE HOGWARTS HOUSE CUP</h1>
+            <p class="finale-sub-title">LỄ CÔNG BỐ ĐIỂM & VINH DANH NHÀ VÔ ĐỊCH • ANNUAL AWARDS CEREMONY</p>
+            <div class="finale-rune-bar">
+              <span class="rune-line"></span>
+              <span class="rune-center">✨ ⚡ 🏆 ⚡ ✨</span>
+              <span class="rune-line"></span>
+            </div>
+          </div>
+
+          <!-- Central Battle Arena: Gryffindor vs Slytherin Podiums + Cup -->
+          <div class="finale-arena">
+            <!-- Left Podium: Team A (Gryffindor) -->
+            <div id="podium-team-a" class="finale-podium podium-gryffindor">
+              <div class="podium-house-header">
+                <span class="house-name">GRYFFINDOR</span>
+                <span class="house-team-tag">TEAM A</span>
+              </div>
+              <div class="podium-crest-frame">
+                <img src="assets/image99.png" alt="Gryffindor Lion" class="podium-crest-img">
+              </div>
+              <div class="podium-score-box">
+                <span class="score-subtext">TOTAL SCORE</span>
+                <span id="finale-score-a" class="score-number gold">0</span>
+                <span class="score-unit">POINTS</span>
+              </div>
+              <div id="status-badge-team-a" class="podium-status-tag">CONTENDER</div>
+            </div>
+
+            <!-- Center Column: Sacred House Cup & Winner Proclamation Stage -->
+            <div class="finale-center-stage">
+              <!-- Initial Tally View during score count-up -->
+              <div id="finale-tally-box" class="finale-tally-box">
+                <div class="trophy-halo-glow"></div>
+                <div class="trophy-cup-box">
+                  <div class="trophy-cup-emoji">🏆</div>
+                  <div class="trophy-cup-title">THE HOUSE CUP</div>
+                </div>
+                <div class="trophy-vs-pill">
+                  <span class="vs-house a">TEAM A</span>
+                  <span class="vs-icon">⚔️</span>
+                  <span class="vs-house b">TEAM B</span>
+                </div>
+                <div id="finale-tally-status" class="tally-status-badge">⚡ TALLYING HOUSE POINTS... ⚡</div>
+              </div>
+
+              <!-- Grand Winner Proclamation Card (Revealed after score count-up) -->
+              <div id="finale-winner-banner" class="finale-winner-banner hidden">
+                <div class="winner-banner-frame">
+                  <div class="winner-crown-ribbon">
+                    <span id="winner-crown-text">👑 HOUSE CUP CHAMPION 👑</span>
+                  </div>
+                  <h2 id="winner-proclamation-title" class="winner-proclamation-title">TEAM A WINS THE HOUSE CUP!</h2>
+                  <p id="winner-proclamation-desc" class="winner-proclamation-desc">Honoring the brave wizards of Gryffindor for supreme knowledge and courage!</p>
+                  
+                  <div class="winner-media-row">
+                    <div class="winner-gif-wrapper">
+                      <img id="winner-celebration-gif" src="assets/image42.gif" alt="Celebration Feast" class="winner-celebration-gif">
+                    </div>
+                    <div class="winner-stats-summary" id="winner-stats-summary">
+                      <div class="stat-row">
+                        <span class="stat-label">Winning House:</span>
+                        <span id="stat-winner-name" class="stat-value gold">Team A (Gryffindor)</span>
+                      </div>
+                      <div class="stat-row">
+                        <span class="stat-label">Final Margin:</span>
+                        <span id="stat-margin-value" class="stat-value">+5 Points</span>
+                      </div>
+                      <div class="stat-row">
+                        <span class="stat-label">Tournament Status:</span>
+                        <span class="stat-value">16 of 16 Completed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Podium: Team B (Slytherin) -->
+            <div id="podium-team-b" class="finale-podium podium-slytherin">
+              <div class="podium-house-header">
+                <span class="house-name">SLYTHERIN</span>
+                <span class="house-team-tag">TEAM B</span>
+              </div>
+              <div class="podium-crest-frame">
+                <img src="assets/image100.png" alt="Slytherin Serpent" class="podium-crest-img">
+              </div>
+              <div class="podium-score-box">
+                <span class="score-subtext">TOTAL SCORE</span>
+                <span id="finale-score-b" class="score-number gold">0</span>
+                <span class="score-unit">POINTS</span>
+              </div>
+              <div id="status-badge-team-b" class="podium-status-tag">CONTENDER</div>
+            </div>
+          </div>
+
+          <!-- Bottom Ceremony Actions Toolbar -->
+          <div class="finale-controls-bar">
+            <button id="btn-replay-ceremony" class="btn-finale-action btn-gold-shimmer" title="Replay ceremony animation">
+              🔄 REPLAY CEREMONY
+            </button>
+            <button id="btn-finale-return-board" class="btn-finale-action" title="Review Question Board">
+              📜 QUESTION BOARD
+            </button>
+            <button id="btn-finale-restart-game" class="btn-finale-action btn-danger-subtle" title="Reset all scores and start new game">
+              ⚡ NEW CHAMPIONSHIP
+            </button>
           </div>
         </div>
       </div>

@@ -299,7 +299,8 @@ class HogwartsGame {
       reward: document.getElementById('screen-reward'),
       penalty: document.getElementById('screen-penalty'),
       victory: document.getElementById('screen-victory'),
-      abPenalty: document.getElementById('screen-ab-penalty')
+      abPenalty: document.getElementById('screen-ab-penalty'),
+      finale: document.getElementById('screen-finale')
     };
 
     this.scoreAEl = document.getElementById('score-team-a');
@@ -374,6 +375,14 @@ class HogwartsGame {
         this.toggleTurn();
       }
       this.switchScreen('grid');
+      if (this.completedQuestions.size >= 16) {
+        this.showToast('🏆 All 16 questions complete! Preparing House Cup Ceremony...', 'success');
+        setTimeout(() => {
+          if (this.currentScreen === 'grid') {
+            this.openFinaleScreen();
+          }
+        }, 2200);
+      }
     });
 
     document.getElementById('btn-q-green').addEventListener('click', () => {
@@ -471,6 +480,36 @@ class HogwartsGame {
         this.closeRewardPopupAndReturn();
       });
     }
+
+    // Grand Finale Ceremony buttons
+    const btnEnterFinale = document.getElementById('btn-enter-finale');
+    if (btnEnterFinale) {
+      btnEnterFinale.addEventListener('click', () => {
+        this.openFinaleScreen();
+      });
+    }
+
+    const btnReplayCeremony = document.getElementById('btn-replay-ceremony');
+    if (btnReplayCeremony) {
+      btnReplayCeremony.addEventListener('click', () => {
+        this.runFinaleCeremony();
+      });
+    }
+
+    const btnFinaleBoard = document.getElementById('btn-finale-return-board');
+    if (btnFinaleBoard) {
+      btnFinaleBoard.addEventListener('click', () => {
+        window.soundEngine.playClick();
+        this.switchScreen('grid');
+      });
+    }
+
+    const btnFinaleRestart = document.getElementById('btn-finale-restart-game');
+    if (btnFinaleRestart) {
+      btnFinaleRestart.addEventListener('click', () => {
+        this.resetGameConfirm();
+      });
+    }
   }
 
   bindKeyboardShortcuts() {
@@ -493,6 +532,8 @@ class HogwartsGame {
         document.getElementById('btn-sound-toggle').innerHTML = isMuted ? '🔇' : '🔊';
       } else if (e.code === 'KeyT') {
         this.toggleTurn();
+      } else if (e.code === 'KeyC') {
+        this.openFinaleScreen();
       } else if (this.currentScreen === 'abPenalty' && (e.code === 'KeyA' || e.code === 'KeyB')) {
         const choice = (e.code === 'KeyA') ? 'A' : 'B';
         this.handleABChoice(choice);
@@ -513,6 +554,11 @@ class HogwartsGame {
           this.handleOpenEndedConfirm(false);
         }
       } else if (e.code === 'Escape' || e.code === 'ArrowLeft') {
+        if (this.currentScreen === 'finale') {
+          window.soundEngine.playClick();
+          this.switchScreen('grid');
+          return;
+        }
         if (this.currentScreen === 'question' || this.currentScreen === 'reward' || this.currentScreen === 'penalty' || this.currentScreen === 'victory' || this.currentScreen === 'abPenalty') {
           if (this.penaltyTimer) clearTimeout(this.penaltyTimer);
           if (this.victoryTimer) clearTimeout(this.victoryTimer);
@@ -580,7 +626,8 @@ class HogwartsGame {
     this.currentScreen = screenName;
 
     // Show or hide global scoreboard
-    if (screenName === 'title' || screenName === 'letter' || screenName === 'rules') {
+    const isSortingHats = screenName === 'reward' && document.getElementById('reward-minigame-container')?.classList.contains('sorting-hats-mode');
+    if (screenName === 'title' || screenName === 'letter' || screenName === 'rules' || screenName === 'finale' || isSortingHats) {
       this.globalScoreboard.classList.add('hidden');
     } else {
       this.globalScoreboard.classList.remove('hidden');
@@ -668,6 +715,15 @@ class HogwartsGame {
 
       gridContainer.appendChild(btn);
     });
+
+    const finaleBanner = document.getElementById('grid-finale-banner');
+    if (finaleBanner) {
+      if (this.completedQuestions.size >= 16) {
+        finaleBanner.classList.remove('hidden');
+      } else {
+        finaleBanner.classList.add('hidden');
+      }
+    }
   }
 
   openMysteryGift() {
@@ -1287,9 +1343,21 @@ class HogwartsGame {
     const popupEl = document.getElementById('reward-points-popup');
     if (popupEl) popupEl.classList.remove('active');
 
+    document.getElementById('reward-minigame-container')?.classList.remove('sorting-hats-mode');
+    if (this.globalScoreboard) this.globalScoreboard.classList.remove('hidden');
+
     window.soundEngine.playClick();
     this.toggleTurn(); // Switch turn to next team
     this.switchScreen('grid');
+
+    if (this.completedQuestions.size >= 16) {
+      this.showToast('🏆 All 16 questions complete! Preparing House Cup Ceremony...', 'success');
+      setTimeout(() => {
+        if (this.currentScreen === 'grid') {
+          this.openFinaleScreen();
+        }
+      }, 2200);
+    }
   }
 
   showRewardPointsPopup(data) {
@@ -1429,14 +1497,22 @@ class HogwartsGame {
       bowls: 'assets/image86.jpg',      // Slide 36 (Potions Dungeon)
       hippogriff: 'assets/image92.gif', // Slide 37 (Hippogriff)
       snitch: 'assets/image95.jpg',     // Slide 40 (Quidditch pitch)
-      sortingHats: 'assets/image98.jpg',// Slide 41 (Great Hall Sorting)
+      sortingHats: 'assets/sorting_hats_clean_bg.png', // Slide 41 (Great Hall Sorting)
       patronus: 'assets/image109.jpg',  // Slide 42 (Forbidden Forest)
       mysteryGift: 'assets/image109.jpg'// Q16 Bonus
     };
 
+    container.classList.remove('sorting-hats-mode');
+    if (type === 'sortingHats') {
+      container.classList.add('sorting-hats-mode');
+      if (this.globalScoreboard) this.globalScoreboard.classList.add('hidden');
+    } else {
+      if (this.globalScoreboard) this.globalScoreboard.classList.remove('hidden');
+    }
+
     const bgUrl = minigameBgMap[type] || 'assets/image11.jpg';
     container.style.backgroundImage = `url('${bgUrl}')`;
-    container.style.backgroundSize = 'cover';
+    container.style.backgroundSize = type === 'sortingHats' ? '100% 100%' : 'cover';
     container.style.backgroundPosition = 'center center';
     container.style.backgroundRepeat = 'no-repeat';
 
@@ -1509,7 +1585,7 @@ class HogwartsGame {
         this.renderSnitchWheelMinigame(playArea);
         break;
       case 'sortingHats':
-        this.renderSortingHatsMinigame(playArea);
+        this.renderSortingHatsMinigame(playArea, container);
         break;
       case 'patronus':
         this.renderPatronusMinigame(playArea);
@@ -1550,11 +1626,11 @@ class HogwartsGame {
               <img src="assets/image22.png" alt="Gryffindor Tie">
               <span>Gryffindor Tie</span>
             </div>
-            <div class="supply-card tie-card" data-pts="0" data-name="Slytherin Tie">
+            <div class="supply-card tie-card" data-pts="1" data-name="Slytherin Tie">
               <img src="assets/image23.png" alt="Slytherin Tie">
               <span>Slytherin Tie</span>
             </div>
-            <div class="supply-card tie-card" data-pts="-1" data-dark="true" data-name="Ravenclaw Tie">
+            <div class="supply-card tie-card" data-pts="2" data-name="Ravenclaw Tie">
               <img src="assets/image24.png" alt="Ravenclaw Tie">
               <span>Ravenclaw Tie</span>
             </div>
@@ -1577,11 +1653,11 @@ class HogwartsGame {
               <img src="assets/image16.png" alt="The Elder Wand">
               <span>The Elder Wand</span>
             </div>
-            <div class="supply-card wand-card" data-pts="0" data-name="Harry Potter's Wand">
+            <div class="supply-card wand-card" data-pts="2" data-name="Harry Potter's Wand">
               <img src="assets/image17.png" alt="Harry Potter's Wand">
               <span>Harry Potter's Wand</span>
             </div>
-            <div class="supply-card wand-card" data-pts="-1" data-dark="true" data-name="Hermione Granger's Wand">
+            <div class="supply-card wand-card" data-pts="1" data-name="Hermione Granger's Wand">
               <img src="assets/image15.png" alt="Hermione Granger's Wand">
               <span>Hermione Granger's Wand</span>
             </div>
@@ -1600,7 +1676,7 @@ class HogwartsGame {
             <span class="cat-hint">(Choose 1)</span>
           </div>
           <div class="supplies-row" data-cat="books">
-            <div class="supply-card book-card" data-pts="0" data-name="Advanced Potion Making">
+            <div class="supply-card book-card" data-pts="2" data-name="Advanced Potion Making">
               <img src="assets/image19.png" alt="Advanced Potion Making">
               <span>Advanced Potion Making</span>
             </div>
@@ -1612,7 +1688,7 @@ class HogwartsGame {
               <img src="assets/image26.png" alt="Quidditch Through the Ages">
               <span>Quidditch Through the Ages</span>
             </div>
-            <div class="supply-card book-card" data-pts="-1" data-dark="true" data-name="Fantastic Beasts and Where to Find Them">
+            <div class="supply-card book-card" data-pts="1" data-name="Fantastic Beasts and Where to Find Them">
               <img src="assets/image21.png" alt="Fantastic Beasts & Where to Find Them">
               <span>Fantastic Beasts & Where to Find Them</span>
             </div>
@@ -1627,7 +1703,6 @@ class HogwartsGame {
         if (card.classList.contains('revealed') || (row && row.classList.contains('row-locked')) || pickedSupplies >= 3) return;
 
         const pts = parseInt(card.dataset.pts);
-        const isDark = card.dataset.dark === "true";
         card.classList.add('revealed');
 
         // Lock this entire row so user can only pick 1 item from this category
@@ -1639,39 +1714,17 @@ class HogwartsGame {
         }
 
         pickedSupplies++;
-        const netPts = isDark ? -1 : pts;
-        totalSuppliesPts += netPts;
+        totalSuppliesPts += pts;
 
-        if (isDark) {
-          card.innerHTML += `
-            <div class="reveal-badge dark">
-              <img src="assets/image14.png" class="pts-img" alt="Dark Mark">
-              <div class="pts-title">Dark Mark!</div>
-              <div class="pts-subtitle">-1 Point</div>
-            </div>
-          `;
-          this.adjustScore(this.activeTeam, -1);
-          window.soundEngine.playBomb();
-        } else if (pts === 0) {
-          card.innerHTML += `
-            <div class="reveal-badge safe">
-              <span class="pts-emoji">🛡️</span>
-              <div class="pts-title">0 Points</div>
-              <div class="pts-subtitle">Safe Choice!</div>
-            </div>
-          `;
-          window.soundEngine.playWandSpell();
-        } else {
-          const ptsImg = ptsImgMap[pts] ? `<img src="${ptsImgMap[pts]}" class="pts-img" alt="+${pts}">` : `<span class="pts-emoji">✨</span>`;
-          card.innerHTML += `
-            <div class="reveal-badge">
-              ${ptsImg}
-              <div class="pts-title">+${pts} Point${pts > 1 ? 's' : ''}</div>
-            </div>
-          `;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playCorrect();
-        }
+        const ptsImg = ptsImgMap[pts] ? `<img src="${ptsImgMap[pts]}" class="pts-img" alt="+${pts}">` : `<span class="pts-emoji">✨</span>`;
+        card.innerHTML += `
+          <div class="reveal-badge">
+            ${ptsImg}
+            <div class="pts-title">+${pts} Point${pts > 1 ? 's' : ''}</div>
+          </div>
+        `;
+        this.adjustScore(this.activeTeam, pts);
+        window.soundEngine.playCorrect();
 
         if (pickedSupplies >= 3) {
           container.querySelectorAll('.supply-card').forEach(c => c.style.pointerEvents = 'none');
@@ -1680,10 +1733,9 @@ class HogwartsGame {
             this.showRewardPointsPopup({
               pts: totalSuppliesPts,
               team: this.activeTeam,
-              title: `${totalSuppliesPts >= 0 ? '+' : ''}${totalSuppliesPts} POINTS FOR TEAM ${this.activeTeam}!`,
+              title: `+${totalSuppliesPts} POINTS FOR TEAM ${this.activeTeam}!`,
               desc: `Team ${this.activeTeam} bought all 3 school supplies (Ties, Wands, Books)!`,
-              icon: totalSuppliesPts >= 0 ? 'assets/image36.png' : 'assets/image31.png',
-              isPenalty: totalSuppliesPts < 0
+              icon: 'assets/image36.png'
             });
           }, 850);
         }
@@ -1696,17 +1748,17 @@ class HogwartsGame {
     document.getElementById('reward-main-title').textContent = "Choose your best friend…";
     container.innerHTML = `
       <div class="three-choice-game">
-        <div class="choice-card" data-action="change" data-name="Ron Weasley" data-badge="assets/image36.png">
+        <div class="choice-card" data-pts="1" data-name="Ron Weasley" data-badge="assets/image27.png">
           <img src="assets/image34.png" alt="Ron Weasley">
           <h3>Ron Weasley</h3>
           <div class="reveal-cover">Choose Ron</div>
         </div>
-        <div class="choice-card penalty-choice" data-action="zero" data-name="Harry Potter" data-badge="assets/image37.png">
+        <div class="choice-card" data-pts="3" data-name="Harry Potter" data-badge="assets/image29.png">
           <img src="assets/image35.png" alt="Harry Potter">
           <h3>Harry Potter</h3>
           <div class="reveal-cover">Choose Harry</div>
         </div>
-        <div class="choice-card" data-action="double" data-name="Hermione Granger" data-badge="assets/image38.png">
+        <div class="choice-card" data-pts="5" data-name="Hermione Granger" data-badge="assets/image12.png">
           <img src="assets/image33.png" alt="Hermione Granger">
           <h3>Hermione Granger</h3>
           <div class="reveal-cover">Choose Hermione</div>
@@ -1719,69 +1771,26 @@ class HogwartsGame {
         if (card.classList.contains('picked')) return;
         container.querySelectorAll('.choice-card').forEach(c => c.style.pointerEvents = 'none');
         card.classList.add('picked');
-        const action = card.dataset.action;
+        const pts = parseInt(card.dataset.pts);
         const name = card.dataset.name;
         const badge = card.dataset.badge;
 
-        if (action === 'change') {
-          card.querySelector('.reveal-cover').innerHTML = `
-            <img src="${badge}" class="badge-reveal-icon" alt="change pts">
-            <span class="pts-text">CHANGE PTS!</span>
-          `;
-          const otherTeam = this.activeTeam === 'A' ? 'B' : 'A';
-          const oldMy = this.scores[this.activeTeam];
-          const oldOpp = this.scores[otherTeam];
-          this.scores[this.activeTeam] = oldOpp;
-          this.scores[otherTeam] = oldMy;
-          this.updateScoreboard();
-          window.soundEngine.playFanfare();
+        card.querySelector('.reveal-cover').innerHTML = `
+          <img src="${badge}" class="badge-reveal-icon" alt="+${pts} pts">
+          <span class="pts-text">+${pts} POINT${pts > 1 ? 'S' : ''}!</span>
+        `;
+        this.adjustScore(this.activeTeam, pts);
+        window.soundEngine.playFanfare();
 
-          setTimeout(() => {
-            this.showRewardPointsPopup({
-              pts: oldOpp - oldMy,
-              team: this.activeTeam,
-              title: `CHANGE POINTS!`,
-              desc: `Team ${this.activeTeam} chose ${name} and swapped scores with Team ${otherTeam}! (Team A: ${this.scores.A} pts, Team B: ${this.scores.B} pts)`,
-              icon: badge
-            });
-          }, 800);
-        } else if (action === 'zero') {
-          card.querySelector('.reveal-cover').innerHTML = `
-            <img src="${badge}" class="badge-reveal-icon" alt="zero pts">
-            <span class="pts-text penalty">0 PTS!</span>
-          `;
-          window.soundEngine.playBomb();
-
-          setTimeout(() => {
-            this.showRewardPointsPopup({
-              pts: 0,
-              team: this.activeTeam,
-              title: `0 POINTS (ZERO PTS)!`,
-              desc: `Unlucky! ${name} brought 0 points for Team ${this.activeTeam} this turn!`,
-              icon: badge,
-              isPenalty: true
-            });
-          }, 800);
-        } else if (action === 'double') {
-          card.querySelector('.reveal-cover').innerHTML = `
-            <img src="${badge}" class="badge-reveal-icon" alt="pts x2">
-            <span class="pts-text">PTS x2!</span>
-          `;
-          const cur = this.scores[this.activeTeam];
-          const bonus = cur > 0 ? cur : 4;
-          this.adjustScore(this.activeTeam, bonus);
-          window.soundEngine.playFanfare();
-
-          setTimeout(() => {
-            this.showRewardPointsPopup({
-              pts: bonus,
-              team: this.activeTeam,
-              title: `POINTS x2 (DOUBLED)!`,
-              desc: `${name} cast a Doubling Charm! Team ${this.activeTeam}'s points doubled!`,
-              icon: badge
-            });
-          }, 800);
-        }
+        setTimeout(() => {
+          this.showRewardPointsPopup({
+            pts: pts,
+            team: this.activeTeam,
+            title: `+${pts} POINT${pts > 1 ? 'S' : ''} FOR TEAM ${this.activeTeam}!`,
+            desc: `Team ${this.activeTeam} chose ${name} and earned +${pts} point${pts > 1 ? 's' : ''}!`,
+            icon: badge
+          });
+        }, 800);
       });
     });
   }
@@ -1866,21 +1875,21 @@ class HogwartsGame {
             }, 1200);
           } else {
             outcome.innerHTML = `
-              <img src="assets/image44.gif" class="letter-outcome-gif" alt="Caught by Dursleys">
-              <h2 class="outcome-title lose">You were caught by the Dursleys!</h2>
-              <p class="outcome-desc">Uncle Vernon confiscated your letter and locked it away!</p>
-              <div class="pts-award penalty">0 POINTS (ZERO PTS) FOR TEAM ${this.activeTeam}</div>
+              <img src="assets/image42.gif" class="letter-outcome-gif" alt="Hogwarts Letter Snippet">
+              <h2 class="outcome-title win">Letter Snippet Retrieved!</h2>
+              <p class="outcome-desc">An owl safely slipped an official Hogwarts letter snippet into your hands!</p>
+              <div class="pts-award">+1 POINT FOR TEAM ${this.activeTeam}</div>
             `;
-            window.soundEngine.playBomb();
+            this.adjustScore(this.activeTeam, 1);
+            window.soundEngine.playCorrect();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: 0,
+                pts: 1,
                 team: this.activeTeam,
-                title: `0 POINTS (ZERO PTS)`,
-                desc: 'You were caught by the Dursleys!',
-                icon: 'assets/image37.png',
-                isPenalty: true
+                title: `+1 POINT FOR TEAM ${this.activeTeam}!`,
+                desc: 'You caught a flying Hogwarts letter snippet! +1 Point.',
+                icon: 'assets/image27.png'
               });
             }, 1200);
           }
@@ -1889,6 +1898,7 @@ class HogwartsGame {
     });
   }
 
+  // 4. Choose someone to duel (Slide 25)
   // 4. Choose someone to duel (Slide 25)
   renderDuelMinigame(container) {
     document.getElementById('reward-main-title').textContent = "Choose someone to duel…";
@@ -1899,12 +1909,12 @@ class HogwartsGame {
           <h3>Draco Malfoy</h3>
           <div class="reveal-cover">Duel Draco</div>
         </div>
-        <div class="choice-card penalty-choice" data-pts="-5" data-name="Severus Snape" data-badge="assets/image49.png">
+        <div class="choice-card" data-pts="5" data-name="Severus Snape" data-badge="assets/image12.png">
           <img src="assets/image48.png" alt="Severus Snape">
           <h3>Severus Snape</h3>
           <div class="reveal-cover">Duel Snape</div>
         </div>
-        <div class="choice-card" data-pts="3" data-name="Pansy Parkinson" data-badge="assets/image29.png">
+        <div class="choice-card" data-pts="2" data-name="Pansy Parkinson" data-badge="assets/image28.png">
           <img src="assets/image47.png" alt="Pansy Parkinson">
           <h3>Pansy Parkinson</h3>
           <div class="reveal-cover">Duel Pansy</div>
@@ -1921,24 +1931,19 @@ class HogwartsGame {
         const name = card.dataset.name;
         const badge = card.dataset.badge;
 
-        if (pts < 0) {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text penalty">${pts} POINTS!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playBomb();
-        } else {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINTS VICTORY!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playFanfare();
-        }
+        card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINTS VICTORY!</span>`;
+        this.adjustScore(this.activeTeam, pts);
+        window.soundEngine.playFanfare();
 
         setTimeout(() => {
           this.showRewardPointsPopup({
             pts: pts,
             team: this.activeTeam,
-            title: pts >= 0 ? `+${pts} POINTS FOR TEAM ${this.activeTeam}!` : `${pts} POINTS PENALTY FOR TEAM ${this.activeTeam}`,
-            desc: pts >= 0 ? `You defeated ${name} in a magical duel!` : `Professor Snape countered your spell and docked 5 points!`,
-            icon: badge,
-            isPenalty: pts < 0
+            title: `+${pts} POINTS FOR TEAM ${this.activeTeam}!`,
+            desc: name === 'Severus Snape'
+              ? `You held your ground in a magnificent duel against Professor Snape! +${pts} Points!`
+              : `You defeated ${name} in a magical duel! +${pts} Points!`,
+            icon: badge
           });
         }, 800);
       });
@@ -1959,7 +1964,7 @@ class HogwartsGame {
 
     container.innerHTML = `
       <div class="cards-luck-game">
-        <p class="game-instruction">Keep the card you have or draw more for more points. But beware: if you find a bomb the game is over and you lose all your points!</p>
+        <p class="game-instruction">Keep the card you have or draw more for more points! Even if the magic flares, you always keep at least +1 point!</p>
         <div class="card-display">
           <div class="crest-card active-card">
             <img id="active-card-img" src="${cardLevels[0].img}" alt="Hogwarts Card">
@@ -1985,19 +1990,19 @@ class HogwartsGame {
       if (isBomb) {
         gameOver = true;
         cardImg.src = 'assets/image59.png';
-        statusText.innerHTML = `<span style="color:#ff3333">💣 BOMB!</span><br><small>You lost all points!</small>`;
-        window.soundEngine.playBomb();
+        statusText.innerHTML = `<span style="color:#ffd700">⚡ SHIELD CHARM!</span><br><small>Retained +1 Point!</small>`;
+        window.soundEngine.playWandSpell();
         drawBtn.disabled = true;
         keepBtn.disabled = true;
+        this.adjustScore(this.activeTeam, 1);
 
         setTimeout(() => {
           this.showRewardPointsPopup({
-            pts: 0,
+            pts: 1,
             team: this.activeTeam,
-            title: `0 POINTS COLLECTED`,
-            desc: `A Bomb exploded! All points lost.`,
-            icon: 'assets/image59.png',
-            isPenalty: true
+            title: `+1 POINT FOR TEAM ${this.activeTeam}!`,
+            desc: `Your shield charm absorbed the blast and retained +1 point!`,
+            icon: 'assets/image27.png'
           });
         }, 1200);
       } else {
@@ -2098,44 +2103,38 @@ class HogwartsGame {
             outcome.innerHTML = `
               <img src="assets/image63.gif" class="ab-stage-outcome-gif" alt="You won the duel">
               <h2 class="outcome-title win">You won!</h2>
-              <p class="outcome-desc">You successfully disarmed your opponent and reversed their advantage!</p>
-              <div class="pts-award">CHANGE PTS! SWAP SCORES FOR TEAM ${this.activeTeam}</div>
+              <p class="outcome-desc">You successfully disarmed your opponent with Expelliarmus! +4 Points awarded!</p>
+              <div class="pts-award">+4 POINTS FOR TEAM ${this.activeTeam}</div>
             `;
-            const otherTeam = this.activeTeam === 'A' ? 'B' : 'A';
-            const oldMy = this.scores[this.activeTeam];
-            const oldOpp = this.scores[otherTeam];
-            this.scores[this.activeTeam] = oldOpp;
-            this.scores[otherTeam] = oldMy;
-            this.updateScoreboard();
+            this.adjustScore(this.activeTeam, 4);
             window.soundEngine.playFanfare();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: oldOpp - oldMy,
+                pts: 4,
                 team: this.activeTeam,
-                title: `CHANGE POINTS (SWAP SCORES)!`,
-                desc: `Team ${this.activeTeam} won the duel and swapped scores with Team ${otherTeam}! (Team A: ${this.scores.A} pts, Team B: ${this.scores.B} pts)`,
-                icon: 'assets/image36.png'
+                title: `+4 POINTS FOR TEAM ${this.activeTeam}!`,
+                desc: `Team ${this.activeTeam} won the duel and earned +4 points!`,
+                icon: 'assets/image30.png'
               });
             }, 1200);
           } else {
             outcome.innerHTML = `
-              <img src="assets/image61.gif" class="ab-stage-outcome-gif" alt="You lost the duel">
-              <h2 class="outcome-title lose">You lost!</h2>
-              <p class="outcome-desc">You were hit by a stunning spell! Lose points penalty!</p>
-              <div class="pts-award penalty">-2 POINTS PENALTY FOR TEAM ${this.activeTeam}</div>
+              <img src="assets/image63.gif" class="ab-stage-outcome-gif" alt="Honorable duel">
+              <h2 class="outcome-title win">Honorable Duel!</h2>
+              <p class="outcome-desc">Your shields clashed fiercely! You held your ground and earned +1 Point!</p>
+              <div class="pts-award">+1 POINT FOR TEAM ${this.activeTeam}</div>
             `;
-            this.adjustScore(this.activeTeam, -2);
-            window.soundEngine.playBomb();
+            this.adjustScore(this.activeTeam, 1);
+            window.soundEngine.playCorrect();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: -2,
+                pts: 1,
                 team: this.activeTeam,
-                title: `-2 POINTS PENALTY FOR TEAM ${this.activeTeam}`,
-                desc: `Your rival caught you off guard!`,
-                icon: 'assets/image62.png',
-                isPenalty: true
+                title: `+1 POINT FOR TEAM ${this.activeTeam}!`,
+                desc: `You stood firm against your rival and earned +1 Point.`,
+                icon: 'assets/image27.png'
               });
             }, 1200);
           }
@@ -2204,44 +2203,41 @@ class HogwartsGame {
           outcome.classList.remove('hidden');
 
           if (isLucky) {
-            const cur = this.scores[this.activeTeam];
-            const bonus = cur > 0 ? cur : 4;
             outcome.innerHTML = `
               <img src="assets/image65.gif" class="ab-stage-outcome-gif" alt="You defeated Voldemort">
-              <h2 class="outcome-title win">You won!</h2>
-              <p class="outcome-desc">A surge of silver light repelled the Dark Lord! Your house points double!</p>
-              <div class="pts-award">POINTS x2! +${bonus} POINTS FOR TEAM ${this.activeTeam}</div>
+              <h2 class="outcome-title win">Expecto Patronum!</h2>
+              <p class="outcome-desc">A blinding silver light repelled the Dark Lord! Grand +5 Points victory!</p>
+              <div class="pts-award">+5 POINTS FOR TEAM ${this.activeTeam}</div>
             `;
-            this.adjustScore(this.activeTeam, bonus);
+            this.adjustScore(this.activeTeam, 5);
             window.soundEngine.playFanfare();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: bonus,
+                pts: 5,
                 team: this.activeTeam,
-                title: `POINTS x2 (DOUBLED)!`,
-                desc: `You repelled Lord Voldemort! Team ${this.activeTeam}'s points doubled (+${bonus} pts)!`,
-                icon: 'assets/image38.png'
+                title: `+5 POINTS FOR TEAM ${this.activeTeam}!`,
+                desc: `You repelled the Dark Lord with a supreme Patronus (+5 pts)!`,
+                icon: 'assets/image12.png'
               });
             }, 1200);
           } else {
             outcome.innerHTML = `
-              <img src="assets/image66.gif" class="ab-stage-outcome-gif" alt="Defeated by Voldemort">
-              <h2 class="outcome-title lose">You lost!</h2>
-              <p class="outcome-desc">The dark curse broke through your defences! Penalty points deducted!</p>
-              <div class="pts-award penalty">-2 POINTS PENALTY FOR TEAM ${this.activeTeam}</div>
+              <img src="assets/image65.gif" class="ab-stage-outcome-gif" alt="Shield held">
+              <h2 class="outcome-title win">Protego Shield Held!</h2>
+              <p class="outcome-desc">Your golden shield absorbed the curse and you stood fearless! +1 Point awarded!</p>
+              <div class="pts-award">+1 POINT FOR TEAM ${this.activeTeam}</div>
             `;
-            this.adjustScore(this.activeTeam, -2);
-            window.soundEngine.playBomb();
+            this.adjustScore(this.activeTeam, 1);
+            window.soundEngine.playCorrect();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: -2,
+                pts: 1,
                 team: this.activeTeam,
-                title: `-2 POINTS PENALTY FOR TEAM ${this.activeTeam}`,
-                desc: `The dark forces proved overwhelming!`,
-                icon: 'assets/image67.png',
-                isPenalty: true
+                title: `+1 POINT FOR TEAM ${this.activeTeam}!`,
+                desc: `Your shield held against dark magic! +1 Point for bravery.`,
+                icon: 'assets/image27.png'
               });
             }, 1200);
           }
@@ -2258,12 +2254,12 @@ class HogwartsGame {
     const classes = [
       { name: "Muggle Studies", pts: 3, icon: "assets/classes/class_book_muggle_studies.png", badge: "assets/image29.png" },
       { name: "Potions", pts: 2, icon: "assets/classes/class_book_potions.png", badge: "assets/image28.png" },
-      { name: "History of Magic", pts: 0, icon: "assets/classes/class_book_history_of_magic.png", badge: "assets/image69.png" },
+      { name: "History of Magic", pts: 1, icon: "assets/classes/class_book_history_of_magic.png", badge: "assets/image27.png" },
       { name: "Divination", pts: 2, icon: "assets/classes/class_book_divination.png", badge: "assets/image28.png" },
       { name: "Astronomy", pts: 1, icon: "assets/classes/class_book_astronomy.png", badge: "assets/image27.png" },
       { name: "Defense Against Dark Arts", pts: 5, icon: "assets/classes/class_book_defense_dark_arts.png", badge: "assets/image12.png" },
       { name: "Magical Theory", pts: 2, icon: "assets/classes/class_book_magical_theory.png", badge: "assets/image28.png" },
-      { name: "Herbology", pts: 0, icon: "assets/classes/class_book_herbology.png", badge: "assets/image69.png" },
+      { name: "Herbology", pts: 1, icon: "assets/classes/class_book_herbology.png", badge: "assets/image27.png" },
       { name: "Care of Magical Creatures", pts: 4, icon: "assets/classes/class_book_magical_creatures.png", badge: "assets/image30.png" },
       { name: "Charms", pts: 1, icon: "assets/classes/class_book_charms.png", badge: "assets/image27.png" }
     ];
@@ -2296,11 +2292,7 @@ class HogwartsGame {
         totalClassesPts += pts;
         counter.textContent = `${pickedCount}/3`;
         this.adjustScore(this.activeTeam, pts);
-        if (pts > 0) {
-          window.soundEngine.playCorrect();
-        } else {
-          window.soundEngine.playClick();
-        }
+        window.soundEngine.playCorrect();
 
         if (pickedCount === 3) {
           container.querySelectorAll('.class-card').forEach(c => c.style.pointerEvents = 'none');
@@ -2334,7 +2326,7 @@ class HogwartsGame {
           <h3>Errol (Tawny Owl)</h3>
           <div class="reveal-cover">Choose Errol</div>
         </div>
-        <div class="choice-card penalty-choice" data-pts="-1" data-name="Eagle Owl" data-badge="assets/image80.png">
+        <div class="choice-card" data-pts="1" data-name="Eagle Owl" data-badge="assets/image27.png">
           <img src="assets/image77.png" alt="Eagle Owl">
           <h3>Eagle Owl</h3>
           <div class="reveal-cover">Choose Eagle Owl</div>
@@ -2352,24 +2344,19 @@ class HogwartsGame {
         const name = card.dataset.name;
         const badge = card.dataset.badge;
 
-        if (pts < 0) {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text penalty">${pts} POINT!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playBomb();
-        } else {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINTS REWARD!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playFanfare();
-        }
+        card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINT${pts > 1 ? 'S' : ''} REWARD!</span>`;
+        this.adjustScore(this.activeTeam, pts);
+        window.soundEngine.playFanfare();
 
         setTimeout(() => {
           this.showRewardPointsPopup({
             pts: pts,
             team: this.activeTeam,
-            title: pts >= 0 ? `+${pts} POINTS FOR TEAM ${this.activeTeam}!` : `${pts} POINT PENALTY FOR TEAM ${this.activeTeam}`,
-            desc: pts >= 0 ? `You chose ${name} as your loyal companion!` : `The fierce Eagle Owl pecked your hand and dropped your letter (-1 pt)!`,
-            icon: badge,
-            isPenalty: pts < 0
+            title: `+${pts} POINT${pts > 1 ? 'S' : ''} FOR TEAM ${this.activeTeam}!`,
+            desc: name === 'Eagle Owl'
+              ? `The fierce Eagle Owl delivered your message with sharp speed (+${pts} pt)!`
+              : `You chose ${name} as your loyal companion (+${pts} pts)!`,
+            icon: badge
           });
         }, 800);
       });
@@ -2384,15 +2371,15 @@ class HogwartsGame {
 
     // Authentic 12 bowls from Slide 36
     const bowlsData = [
-      { num: 1, pts: 0, badge: 'assets/image87.png', label: 'Dark Mark (0 pts)' },
+      { num: 1, pts: 1, badge: 'assets/image88.png', label: '+1 Point' },
       { num: 2, pts: 2, badge: 'assets/image28.png', label: '+2 Points' },
       { num: 3, pts: 3, badge: 'assets/image29.png', label: '+3 Points' },
-      { num: 4, pts: 0, badge: 'assets/image87.png', label: 'Dark Mark (0 pts)' },
+      { num: 4, pts: 1, badge: 'assets/image88.png', label: '+1 Point' },
       { num: 5, pts: 5, badge: 'assets/image12.png', label: '+5 Points' },
       { num: 6, pts: 2, badge: 'assets/image28.png', label: '+2 Points' },
       { num: 7, pts: 3, badge: 'assets/image29.png', label: '+3 Points' },
       { num: 8, pts: 2, badge: 'assets/image28.png', label: '+2 Points' },
-      { num: 9, pts: 0, badge: 'assets/image87.png', label: 'Dark Mark (0 pts)' },
+      { num: 9, pts: 1, badge: 'assets/image88.png', label: '+1 Point' },
       { num: 10, pts: 4, badge: 'assets/image30.png', label: '+4 Points' },
       { num: 11, pts: 1, badge: 'assets/image88.png', label: '+1 Point' },
       { num: 12, pts: 2, badge: 'assets/image28.png', label: '+2 Points' }
@@ -2428,11 +2415,7 @@ class HogwartsGame {
         counter.textContent = `${pickedCount}/3`;
 
         this.adjustScore(this.activeTeam, pts);
-        if (pts > 0) {
-          window.soundEngine.playWandSpell();
-        } else {
-          window.soundEngine.playBomb();
-        }
+        window.soundEngine.playWandSpell();
 
         if (pickedCount === 3) {
           container.querySelectorAll('.bowl-card').forEach(c => c.style.pointerEvents = 'none');
@@ -2441,10 +2424,9 @@ class HogwartsGame {
             this.showRewardPointsPopup({
               pts: totalBowlsPts,
               team: this.activeTeam,
-              title: `${totalBowlsPts >= 0 ? '+' : ''}${totalBowlsPts} POINTS FOR TEAM ${this.activeTeam}!`,
+              title: `+${totalBowlsPts} POINTS FOR TEAM ${this.activeTeam}!`,
               desc: `You levitated 3 enchanted bowls with Wingardium Leviosa!`,
-              icon: totalBowlsPts >= 0 ? 'assets/image36.png' : 'assets/image87.png',
-              isPenalty: totalBowlsPts < 0
+              icon: 'assets/image36.png'
             });
           }, 800);
         }
@@ -2515,7 +2497,7 @@ class HogwartsGame {
             outcome.innerHTML = `
               <img src="assets/image93.gif" class="ab-stage-outcome-gif" alt="Hippogriff friend">
               <h2 class="outcome-title win">It sees you as a friend!</h2>
-              <p class="outcome-desc">Buckbeak bowed back respectfully and invited you to fly over the castle!</p>
+              <p class="outcome-desc">Buckbeak bowed back respectfully and invited you to fly over the castle! +5 Points!</p>
               <div class="pts-award">+5 POINTS FOR TEAM ${this.activeTeam}</div>
             `;
             this.adjustScore(this.activeTeam, 5);
@@ -2532,22 +2514,21 @@ class HogwartsGame {
             }, 1200);
           } else {
             outcome.innerHTML = `
-              <img src="assets/image94.gif" class="ab-stage-outcome-gif" alt="Hippogriff enemy">
-              <h2 class="outcome-title lose">It sees you as an enemy!</h2>
-              <p class="outcome-desc">You broke eye contact too soon and Buckbeak grew agitated!</p>
-              <div class="pts-award penalty">-5 POINTS PENALTY FOR TEAM ${this.activeTeam}</div>
+              <img src="assets/image93.gif" class="ab-stage-outcome-gif" alt="Hippogriff calm">
+              <h2 class="outcome-title win">Buckbeak bows respectfully!</h2>
+              <p class="outcome-desc">You maintained calm eye contact! Buckbeak accepted your greeting and granted +1 Point!</p>
+              <div class="pts-award">+1 POINT FOR TEAM ${this.activeTeam}</div>
             `;
-            this.adjustScore(this.activeTeam, -5);
-            window.soundEngine.playBomb();
+            this.adjustScore(this.activeTeam, 1);
+            window.soundEngine.playCorrect();
 
             setTimeout(() => {
               this.showRewardPointsPopup({
-                pts: -5,
+                pts: 1,
                 team: this.activeTeam,
-                title: `-5 POINTS PENALTY FOR TEAM ${this.activeTeam}`,
-                desc: `Buckbeak was startled! Be careful next time.`,
-                icon: 'assets/image49.png',
-                isPenalty: true
+                title: `+1 POINT FOR TEAM ${this.activeTeam}!`,
+                desc: `Buckbeak acknowledged your calm bow! +1 Point.`,
+                icon: 'assets/image27.png'
               });
             }, 1200);
           }
@@ -2593,7 +2574,7 @@ class HogwartsGame {
         { name: "+2 Quidditch Points", pts: 2 },
         { name: "+5 Quidditch Points", pts: 5 },
         { name: "+3 Quidditch Points", pts: 3 },
-        { name: "💀 Dark Mark! -2 pts Penalty", pts: -2 },
+        { name: "⚡ Golden Chaser Goal! +1 Point", pts: 1 },
         { name: "⚡ Lightning Bolt! +1 Point", pts: 1 },
         { name: "+6 Quidditch Points", pts: 6 },
         { name: "+4 Quidditch Points", pts: 4 }
@@ -2621,8 +2602,6 @@ class HogwartsGame {
         if (win.pts >= 5) {
           window.soundEngine.playFanfare();
           this.triggerMagicSparks();
-        } else if (win.pts < 0) {
-          window.soundEngine.playBomb();
         } else {
           window.soundEngine.playCorrect();
         }
@@ -2631,91 +2610,159 @@ class HogwartsGame {
           this.showRewardPointsPopup({
             pts: win.pts,
             team: this.activeTeam,
-            title: `${win.pts >= 0 ? '+' : ''}${win.pts} POINTS FOR TEAM ${this.activeTeam}!`,
+            title: `+${win.pts} POINTS FOR TEAM ${this.activeTeam}!`,
             desc: win.name,
-            icon: win.pts >= 0 ? 'assets/image36.png' : 'assets/image37.png',
-            isPenalty: win.pts < 0
+            icon: 'assets/image36.png'
           });
         }, 1200);
       }, 4700);
     });
   }
 
-  // 14. Choose 4 sorting hats! (Slide 41)
-  renderSortingHatsMinigame(container) {
-    document.getElementById('reward-main-title').textContent = "Choose 4 sorting hats!";
+  // 14. Choose 4 sorting hats! (Slide 41 Authentic)
+  renderSortingHatsMinigame(playArea, container) {
+    if (container) {
+      container.classList.add('sorting-hats-mode');
+    }
+    const mainTitle = document.getElementById('reward-main-title');
+    if (mainTitle) mainTitle.textContent = "Choose 4 sorting hats!";
+
     let selectedCount = 0;
     let totalHatsPts = 0;
-    
-    const hatSprites = [
-      'assets/image99.png',
-      'assets/image100.png',
-      'assets/image101.png',
-      'assets/image102.png',
-      'assets/image103.png'
+
+    // Authentic 6x5 matrix mapping directly from Slide 41 - all awarding house points (min +1 pt)!
+    const hatGridData = [
+      // Row A (1 to 5)
+      { id: 'A1', pts: 4, type: 'gryffindor', crest: 'assets/image99.png', label: '+4 PTS', desc: 'Gryffindor' },
+      { id: 'A2', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'A3', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'A4', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'A5', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+
+      // Row B (1 to 5)
+      { id: 'B1', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'B2', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+      { id: 'B3', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'B4', pts: 4, type: 'gryffindor', crest: 'assets/image99.png', label: '+4 PTS', desc: 'Gryffindor' },
+      { id: 'B5', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+
+      // Row C (1 to 5)
+      { id: 'C1', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'C2', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+      { id: 'C3', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+      { id: 'C4', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'C5', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+
+      // Row D (1 to 5)
+      { id: 'D1', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+      { id: 'D2', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'D3', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'D4', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'D5', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+
+      // Row E (1 to 5)
+      { id: 'E1', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'E2', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'E3', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'E4', pts: 3, type: 'slytherin', crest: 'assets/image100.png', label: '+3 PTS', desc: 'Slytherin' },
+      { id: 'E5', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+
+      // Row F (1 to 5)
+      { id: 'F1', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'F2', pts: 4, type: 'gryffindor', crest: 'assets/image99.png', label: '+4 PTS', desc: 'Gryffindor' },
+      { id: 'F3', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
+      { id: 'F4', pts: 1, type: 'hufflepuff', crest: 'assets/image102.png', label: '+1 PT', desc: 'Hufflepuff' },
+      { id: 'F5', pts: 2, type: 'ravenclaw', crest: 'assets/image101.png', label: '+2 PTS', desc: 'Ravenclaw' },
     ];
 
-    const hatRewards = [
-      4, 1, 2, 3, -1,
-      2, 4, 1, 3, 2,
-      1, 3, -1, 4, 1,
-      3, 2, 4, 1, 3,
-      4, 1, 2, -1, 4,
-      2, 3, 1, 4, 2
-    ];
-
-    container.innerHTML = `
-      <div class="sorting-hats-game">
-        <p class="game-instruction">The Great Hall has 30 Sorting Hats! Choose 4 hats: <span id="hats-counter">0/4</span></p>
-        <div class="hats-grid">
-          ${hatRewards.map((pts, idx) => `
-            <div class="hat-item" data-pts="${pts}">
-              <img src="${hatSprites[idx % hatSprites.length]}" alt="Sorting Hat ${idx + 1}">
-              <div class="hat-pts-overlay">?</div>
-            </div>
+    playArea.innerHTML = `
+      <div class="sorting-hats-stage">
+        <!-- 30 Sorting Hats 5x6 Grid on Left Side -->
+        <div class="sorting-hats-grid-overlay">
+          ${hatGridData.map((item, idx) => `
+            <button class="sorting-hat-cell" data-idx="${idx}" data-id="${item.id}" data-pts="${item.pts}" data-type="${item.type}" title="Hat ${item.id}">
+              <img src="assets/sorting_hat_medallion.png" class="hat-medallion-img" alt="Sorting Hat ${item.id}">
+              <div class="hat-revealed-content">
+                ${item.crest ? `<img src="${item.crest}" class="revealed-house-crest" alt="${item.desc}">` : `<span class="empty-poof-icon">✨</span>`}
+                <span class="revealed-pts-tag pts-${item.type}">${item.label}</span>
+              </div>
+            </button>
           `).join('')}
         </div>
+
+        <!-- Right Side Interactive Status Panel (between title and legend) -->
+        <div class="sorting-hats-status-panel">
+          <div class="status-team-badge">
+            <span class="status-icon">${this.activeTeam === 'A' ? '🦁' : '🐍'}</span>
+            <span class="status-label">TEAM ${this.activeTeam}:</span>
+            <span id="sorting-hats-team-pts" class="status-val gold">${this.scores[this.activeTeam]} PTS</span>
+          </div>
+          <div class="status-counter-badge">
+            <span class="status-icon">🎩</span>
+            <span class="status-label">CHOSEN:</span>
+            <span id="sorting-hats-counter" class="status-val gold">0 / 4</span>
+          </div>
+          <div class="status-score-badge">
+            <span class="status-icon">✨</span>
+            <span class="status-label">CEREMONY:</span>
+            <span id="sorting-hats-total-pts" class="status-val">+0 PTS</span>
+          </div>
+        </div>
+
+        <!-- Hotspot at bottom right for Hogwarts quad crest return -->
+        <div id="btn-sorting-hats-crest-return" class="sorting-hats-crest-hotspot" title="Return to Board (Hotkey: Esc / Left Arrow)"></div>
       </div>
     `;
 
-    const counter = container.querySelector('#hats-counter');
-    container.querySelectorAll('.hat-item').forEach(item => {
-      item.addEventListener('click', () => {
-        if (item.classList.contains('picked') || selectedCount >= 4) return;
+    const counterEl = playArea.querySelector('#sorting-hats-counter');
+    const totalPtsEl = playArea.querySelector('#sorting-hats-total-pts');
+
+    playArea.querySelectorAll('.sorting-hat-cell').forEach(cell => {
+      cell.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (cell.classList.contains('picked') || selectedCount >= 4) return;
+
         selectedCount++;
-        item.classList.add('picked');
-        counter.textContent = `${selectedCount}/4`;
-        const pts = parseInt(item.dataset.pts);
+        cell.classList.add('picked');
+        counterEl.textContent = `${selectedCount} / 4`;
+
+        const pts = parseInt(cell.dataset.pts);
+        const type = cell.dataset.type;
         totalHatsPts += pts;
 
-        if (pts < 0) {
-          item.querySelector('.hat-pts-overlay').innerHTML = `💀<br>Bomb! -1 pt`;
-          item.classList.add('bomb');
-          this.adjustScore(this.activeTeam, -1);
-          window.soundEngine.playBomb();
-        } else {
-          const houseNames = { 1: "Hufflepuff", 2: "Ravenclaw", 3: "Slytherin", 4: "Gryffindor" };
-          item.querySelector('.hat-pts-overlay').innerHTML = `🎩<br>+${pts} pt${pts > 1 ? 's' : ''}<br><small>${houseNames[pts]}</small>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playCorrect();
-        }
+        totalPtsEl.textContent = `+${totalHatsPts} PTS`;
+        totalPtsEl.classList.add('gold');
+
+        const teamPtsEl = playArea.querySelector('#sorting-hats-team-pts');
+
+        this.adjustScore(this.activeTeam, pts);
+        if (teamPtsEl) teamPtsEl.textContent = `${this.scores[this.activeTeam]} PTS`;
+        window.soundEngine.playCorrect();
+        this.showToast(`Found Hat ${cell.dataset.id} (${cell.dataset.type.toUpperCase()}): +${pts} Points!`, 'success');
 
         if (selectedCount === 4) {
-          container.querySelectorAll('.hat-item').forEach(c => c.style.pointerEvents = 'none');
-          window.soundEngine.playFanfare();
+          playArea.querySelectorAll('.sorting-hat-cell').forEach(c => c.style.pointerEvents = 'none');
           setTimeout(() => {
+            window.soundEngine.playFanfare();
+            this.triggerVictoryCelebration();
             this.showRewardPointsPopup({
               pts: totalHatsPts,
               team: this.activeTeam,
-              title: `${totalHatsPts >= 0 ? '+' : ''}${totalHatsPts} POINTS FOR TEAM ${this.activeTeam}!`,
-              desc: `Sorting Hat ceremony complete!`,
-              icon: totalHatsPts >= 0 ? 'assets/image36.png' : 'assets/image37.png',
-              isPenalty: totalHatsPts < 0
+              title: `+${totalHatsPts} POINTS FOR TEAM ${this.activeTeam}!`,
+              desc: `Sorting Hat Ceremony Complete! Selected 4 hats.`,
+              icon: 'assets/image36.png'
             });
           }, 800);
         }
       });
     });
+
+    const returnHotspot = playArea.querySelector('#btn-sorting-hats-crest-return');
+    if (returnHotspot) {
+      returnHotspot.addEventListener('click', () => {
+        this.returnToGridFromReward();
+      });
+    }
   }
 
   // 15. Choose your Patronus… (Slide 42)
@@ -2723,7 +2770,7 @@ class HogwartsGame {
     document.getElementById('reward-main-title').textContent = "Choose your Patronus…";
     container.innerHTML = `
       <div class="three-choice-game patronus-theme">
-        <div class="choice-card penalty-choice" data-pts="-3" data-name="Cat Patronus" data-badge="assets/image113.png">
+        <div class="choice-card" data-pts="2" data-name="Cat Patronus (McGonagall)" data-badge="assets/image28.png">
           <img src="assets/image111.png" alt="Cat Patronus">
           <h3>Cat Patronus</h3>
           <div class="reveal-cover">Choose Cat</div>
@@ -2751,24 +2798,17 @@ class HogwartsGame {
         const name = card.dataset.name;
         const badge = card.dataset.badge;
 
-        if (pts < 0) {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text penalty">${pts} POINTS!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playBomb();
-        } else {
-          card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINTS!</span>`;
-          this.adjustScore(this.activeTeam, pts);
-          window.soundEngine.playFanfare();
-        }
+        card.querySelector('.reveal-cover').innerHTML = `<span class="pts-text">+${pts} POINTS REWARD!</span>`;
+        this.adjustScore(this.activeTeam, pts);
+        window.soundEngine.playFanfare();
 
         setTimeout(() => {
           this.showRewardPointsPopup({
             pts: pts,
             team: this.activeTeam,
-            title: pts >= 0 ? `+${pts} POINTS FOR TEAM ${this.activeTeam}!` : `${pts} POINTS PENALTY FOR TEAM ${this.activeTeam}`,
-            desc: pts >= 0 ? `Your ${name} guided your team with pure silver light!` : `A silver cat leaped away into the mist (-3 pts)!`,
-            icon: badge,
-            isPenalty: pts < 0
+            title: `+${pts} POINTS FOR TEAM ${this.activeTeam}!`,
+            desc: `Your ${name} guided your team with pure silver light (+${pts} pts)!`,
+            icon: badge
           });
         }, 800);
       });
@@ -2823,6 +2863,223 @@ class HogwartsGame {
         });
       }, 800);
     });
+  }
+
+  // ==================== GRAND FINALE & HOUSE CUP CEREMONY ====================
+  openFinaleScreen() {
+    if (this.finaleTimer) clearTimeout(this.finaleTimer);
+    if (this.finaleCountInterval) clearInterval(this.finaleCountInterval);
+
+    window.soundEngine.playWandSpell();
+    this.switchScreen('finale');
+    this.runFinaleCeremony();
+  }
+
+  runFinaleCeremony() {
+    if (this.finaleTimer) clearTimeout(this.finaleTimer);
+    if (this.finaleCountInterval) clearInterval(this.finaleCountInterval);
+
+    const tallyBox = document.getElementById('finale-tally-box');
+    const winnerBanner = document.getElementById('finale-winner-banner');
+    if (tallyBox) tallyBox.classList.remove('hidden');
+    if (winnerBanner) winnerBanner.classList.add('hidden');
+
+    const podiumA = document.getElementById('podium-team-a');
+    const podiumB = document.getElementById('podium-team-b');
+    const badgeA = document.getElementById('status-badge-team-a');
+    const badgeB = document.getElementById('status-badge-team-b');
+    const scoreAEl = document.getElementById('finale-score-a');
+    const scoreBEl = document.getElementById('finale-score-b');
+    const tallyStatus = document.getElementById('finale-tally-status');
+
+    if (podiumA) podiumA.classList.remove('winner-elevated');
+    if (podiumB) podiumB.classList.remove('winner-elevated');
+    if (badgeA) {
+      badgeA.className = 'podium-status-tag';
+      badgeA.textContent = 'FINALIST';
+    }
+    if (badgeB) {
+      badgeB.className = 'podium-status-tag';
+      badgeB.textContent = 'FINALIST';
+    }
+
+    if (scoreAEl) scoreAEl.textContent = '0';
+    if (scoreBEl) scoreBEl.textContent = '0';
+    if (tallyStatus) tallyStatus.textContent = 'TALLYING HOUSE POINTS...';
+
+    const targetA = this.scores.A;
+    const targetB = this.scores.B;
+    const duration = 2400; // ms
+    const steps = 40;
+    const intervalTime = duration / steps;
+    let step = 0;
+
+    this.finaleCountInterval = setInterval(() => {
+      step++;
+      const progress = step / steps;
+      const eased = progress * (2 - progress); // easeOutQuad
+      const currentA = Math.round(targetA * eased);
+      const currentB = Math.round(targetB * eased);
+
+      if (scoreAEl) scoreAEl.textContent = currentA;
+      if (scoreBEl) scoreBEl.textContent = currentB;
+
+      if (step % 2 === 0) {
+        window.soundEngine.playWheelTick();
+      }
+
+      if (step >= steps) {
+        clearInterval(this.finaleCountInterval);
+        this.finaleCountInterval = null;
+        if (scoreAEl) scoreAEl.textContent = targetA;
+        if (scoreBEl) scoreBEl.textContent = targetB;
+        if (tallyStatus) tallyStatus.textContent = 'VERIFYING MAGICAL TALLY...';
+
+        this.finaleTimer = setTimeout(() => {
+          this.proclaimWinner(targetA, targetB);
+        }, 600);
+      }
+    }, intervalTime);
+  }
+
+  proclaimWinner(scoreA, scoreB) {
+    window.soundEngine.playVictoryFanfare();
+    this.spawnFinaleSparks();
+
+    const podiumA = document.getElementById('podium-team-a');
+    const podiumB = document.getElementById('podium-team-b');
+    const badgeA = document.getElementById('status-badge-team-a');
+    const badgeB = document.getElementById('status-badge-team-b');
+    const tallyStatus = document.getElementById('finale-tally-status');
+    const winnerBanner = document.getElementById('finale-winner-banner');
+
+    const ribbonText = document.getElementById('winner-crown-text');
+    const headline = document.getElementById('winner-proclamation-title');
+    const desc = document.getElementById('winner-proclamation-desc');
+    const statWinner = document.getElementById('stat-winner-name');
+    const statMargin = document.getElementById('stat-margin-value');
+
+    if (scoreA > scoreB) {
+      const margin = scoreA - scoreB;
+      if (podiumA) podiumA.classList.add('winner-elevated');
+      if (badgeA) {
+        badgeA.className = 'podium-status-tag champion';
+        badgeA.textContent = '👑 HOUSE CHAMPION';
+      }
+      if (badgeB) badgeB.textContent = 'HONORABLE FINALIST';
+      if (tallyStatus) tallyStatus.textContent = 'GRYFFINDOR CLAIMS VICTORY!';
+
+      if (ribbonText) ribbonText.textContent = '🦁 GRYFFINDOR TRIUMPHS! 🦁';
+      if (headline) {
+        headline.textContent = 'TEAM A WINS THE HOUSE CUP!';
+        headline.style.color = '#ffd700';
+      }
+      if (desc) desc.textContent = 'Through exceptional courage, bravery, and magical intellect, Team A has led Gryffindor to victory!';
+      if (statWinner) statWinner.textContent = 'Team A (Gryffindor 🦁)';
+      if (statMargin) statMargin.textContent = `+${margin} Points (${scoreA} vs ${scoreB})`;
+    } else if (scoreB > scoreA) {
+      const margin = scoreB - scoreA;
+      if (podiumB) podiumB.classList.add('winner-elevated');
+      if (badgeB) {
+        badgeB.className = 'podium-status-tag champion';
+        badgeB.textContent = '👑 HOUSE CHAMPION';
+      }
+      if (badgeA) badgeA.textContent = 'HONORABLE FINALIST';
+      if (tallyStatus) tallyStatus.textContent = 'SLYTHERIN CLAIMS VICTORY!';
+
+      if (ribbonText) ribbonText.textContent = '🐍 SLYTHERIN TRIUMPHS! 🐍';
+      if (headline) {
+        headline.textContent = 'TEAM B WINS THE HOUSE CUP!';
+        headline.style.color = '#69f0ae';
+      }
+      if (desc) desc.textContent = 'Through cunning, resourcefulness, and superior wizarding strategy, Team B has seized victory for Slytherin!';
+      if (statWinner) statWinner.textContent = 'Team B (Slytherin 🐍)';
+      if (statMargin) statMargin.textContent = `+${margin} Points (${scoreB} vs ${scoreA})`;
+    } else {
+      if (podiumA) podiumA.classList.add('winner-elevated');
+      if (podiumB) podiumB.classList.add('winner-elevated');
+      if (badgeA) {
+        badgeA.className = 'podium-status-tag champion';
+        badgeA.textContent = '👑 CO-CHAMPION';
+      }
+      if (badgeB) {
+        badgeB.className = 'podium-status-tag champion';
+        badgeB.textContent = '👑 CO-CHAMPION';
+      }
+      if (tallyStatus) tallyStatus.textContent = 'HISTORIC DRAW!';
+
+      if (ribbonText) ribbonText.textContent = '🤝 HISTORIC DRAW: CO-CHAMPIONS! 🤝';
+      if (headline) {
+        headline.textContent = 'AN HONORABLE TIE BETWEEN HOUSES!';
+        headline.style.color = '#ffe082';
+      }
+      if (desc) desc.textContent = 'Both noble Houses of Hogwarts have matched each other in wizarding skill and knowledge!';
+      if (statWinner) statWinner.textContent = `Tie: Team A & Team B (${scoreA} pts)`;
+      if (statMargin) statMargin.textContent = 'Equal Score (0 Margin)';
+    }
+
+    const tallyBox = document.getElementById('finale-tally-box');
+    if (tallyBox) {
+      tallyBox.classList.add('hidden');
+    }
+
+    if (winnerBanner) {
+      winnerBanner.classList.remove('hidden');
+    }
+  }
+
+  spawnFinaleSparks() {
+    const container = document.getElementById('finale-sparks-container');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const colors = ['#ffd700', '#ff8a80', '#a5d6a7', '#80d8ff', '#ffffff', '#e5b95f'];
+    for (let i = 0; i < 50; i++) {
+      setTimeout(() => {
+        const spark = document.createElement('div');
+        spark.className = 'magic-spark';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.random() * 14 + 8;
+        spark.style.cssText = `
+          left: ${Math.random() * 92 + 4}%;
+          top: ${Math.random() * 75 + 10}%;
+          width: ${size}px;
+          height: ${size}px;
+          background: ${color};
+          box-shadow: 0 0 18px ${color};
+        `;
+        container.appendChild(spark);
+        setTimeout(() => spark.remove(), 1600);
+      }, i * 50);
+    }
+  }
+
+  resetGameConfirm() {
+    const confirmed = confirm("Are you sure you want to start a new championship? All scores and question progress will be reset.");
+    if (confirmed) {
+      this.resetGame();
+    }
+  }
+
+  resetGame() {
+    if (this.finaleTimer) clearTimeout(this.finaleTimer);
+    if (this.finaleCountInterval) clearInterval(this.finaleCountInterval);
+
+    this.scores = { A: 0, B: 0 };
+    this.activeTeam = 'A';
+    this.completedQuestions.clear();
+    this.answeredCorrectly = false;
+    this.currentQuestionIdx = 0;
+
+    this.updateScoreboard();
+    this.renderQuestionGrid();
+
+    const finaleBanner = document.getElementById('grid-finale-banner');
+    if (finaleBanner) finaleBanner.classList.add('hidden');
+
+    window.soundEngine.playWandSpell();
+    this.switchScreen('title');
+    this.showToast('New Championship started! Welcome to Hogwarts.', 'info');
   }
 }
 
