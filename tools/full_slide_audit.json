@@ -1,0 +1,6464 @@
+[
+  {
+    "slide_number": 1,
+    "background": "image1_backup.jpg",
+    "shape_count": 2,
+    "shapes": [
+      {
+        "name": "Google Shape;89;p1",
+        "left": 853440,
+        "top": 583351,
+        "width": 7132320,
+        "height": 2971800,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image2.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;90;p1",
+        "left": 4277694,
+        "top": 2495550,
+        "width": 3708066,
+        "height": 1615087,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 2,
+    "background": "image3.jpg",
+    "shape_count": 4,
+    "shapes": [
+      {
+        "name": "Google Shape;101;p2",
+        "left": 354012,
+        "top": 1845291,
+        "width": 8244000,
+        "height": 446400,
+        "type": "TEXT_BOX (17)",
+        "text": "Dear Students of  SILK ROAD,",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          23.0
+        ]
+      },
+      {
+        "name": "Google Shape;102;p2",
+        "left": 354000,
+        "top": 2361875,
+        "width": 8436000,
+        "height": 1862400,
+        "type": "TEXT_BOX (17)",
+        "text": "We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Your knowledge journey begins now. We await to see which of you will become the top of your class by the end of this game.",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          23.0
+        ]
+      },
+      {
+        "name": "Google Shape;103;p2",
+        "left": 6477000,
+        "top": 3962141,
+        "width": 1395412,
+        "height": 461665,
+        "type": "TEXT_BOX (17)",
+        "text": "Sincerely,",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          24.0
+        ]
+      },
+      {
+        "name": "Google Shape;104;p2",
+        "left": 6677025,
+        "top": 4265067,
+        "width": 2390775,
+        "height": 745083,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image4.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 3,
+    "background": "image3.jpg",
+    "shape_count": 4,
+    "shapes": [
+      {
+        "name": "Google Shape;110;h608ceccf3dc70604_0_1",
+        "left": 354000,
+        "top": 1091965,
+        "width": 8244000,
+        "height": 446400,
+        "type": "TEXT_BOX (17)",
+        "text": "Rule",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          23.0
+        ]
+      },
+      {
+        "name": "Google Shape;111;h608ceccf3dc70604_0_1",
+        "left": 354000,
+        "top": 1725450,
+        "width": 8436000,
+        "height": 2753700,
+        "type": "TEXT_BOX (17)",
+        "text": "Team Division: The class will be divided into 2 teams (Team A and Team B).\nTurn-taking: The two teams will take turns choosing a letter displayed on the screen.\nAnswering: Each chosen letter corresponds to a vocabulary question. The active team must discuss and provide the correct answer.\nScoring & Mystery Rewards:\nIf the team answers correctly, they will unlock a mystery reward.\nThe reward points are completely random, so be careful with your choice.\nWinning Condition: The team with the highest score at the end of the game wins!",
+        "image": "",
+        "font_names": [
+          "EB Garamond"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;112;h608ceccf3dc70604_0_1",
+        "left": 5664825,
+        "top": 4513800,
+        "width": 2390700,
+        "height": 461700,
+        "type": "TEXT_BOX (17)",
+        "text": "Sincerely,",
+        "image": "",
+        "font_names": [
+          "EB Garamond",
+          "Arial"
+        ],
+        "font_sizes": [
+          24.0
+        ]
+      },
+      {
+        "name": "Google Shape;113;h608ceccf3dc70604_0_1",
+        "left": 6893425,
+        "top": 4479150,
+        "width": 2250574,
+        "height": 531000,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image4.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 4,
+    "background": "image5.jpg",
+    "shape_count": 16,
+    "shapes": [
+      {
+        "name": "Google Shape;119;p3",
+        "left": 381000,
+        "top": 578882,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "1",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;120;p3",
+        "left": 1333500,
+        "top": 578882,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "2",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;121;p3",
+        "left": 1333500,
+        "top": 1645682,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "4",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;122;p3",
+        "left": 381000,
+        "top": 1645682,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "3",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;123;p3",
+        "left": 6858000,
+        "top": 578882,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "5",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;124;p3",
+        "left": 7886700,
+        "top": 578882,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "6",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;125;p3",
+        "left": 6858000,
+        "top": 1645682,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "7",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;126;p3",
+        "left": 7886700,
+        "top": 1645682,
+        "width": 609600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "8",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;127;p3",
+        "left": 311725,
+        "top": 4179150,
+        "width": 888600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "11",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;128;p3",
+        "left": 1333500,
+        "top": 4179150,
+        "width": 952500,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "12",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;129;p3",
+        "left": 6686550,
+        "top": 3105425,
+        "width": 952500,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "13",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;130;p3",
+        "left": 7735775,
+        "top": 3105425,
+        "width": 1050000,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "14",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;131;p3",
+        "left": 476850,
+        "top": 3186725,
+        "width": 888600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "9",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;132;p3",
+        "left": 1365450,
+        "top": 3186725,
+        "width": 888600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "10",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;133;p3",
+        "left": 6718500,
+        "top": 4179150,
+        "width": 888600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "15",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      },
+      {
+        "name": "Google Shape;134;p3",
+        "left": 7816475,
+        "top": 4179150,
+        "width": 888600,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "16",
+        "image": "",
+        "font_names": [],
+        "font_sizes": [
+          48.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 5,
+    "background": "image6.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;140;p4",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;143;p4",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;146;p4",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "B. Antiquity",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      },
+      {
+        "name": "Google Shape;147;p4",
+        "left": 620675,
+        "top": 516625,
+        "width": 7838700,
+        "height": 1785600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 1: Which word matches the definition \"referring to the ancient past, especially the period before the Middle Ages\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0,
+          13.0
+        ]
+      },
+      {
+        "name": "Google Shape;148;p4",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question 1",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;149;p4",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Medieval",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;150;p4",
+        "left": 1115575,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Quasi-",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;151;p4",
+        "left": 4962025,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Underbelly",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;152;p4",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Antiquity",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 6,
+    "background": "image6.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;158;h61dc23adf5ca8e5d_1_2",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;161;h61dc23adf5ca8e5d_1_2",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;164;h61dc23adf5ca8e5d_1_2",
+        "left": 1632085,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 787200,
+        "type": "TEXT_BOX (17)",
+        "text": "B. Used to show that something is almost, but not completely, the thing described",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          21.0
+        ]
+      },
+      {
+        "name": "Google Shape;165;h61dc23adf5ca8e5d_1_2",
+        "left": 385900,
+        "top": 577850,
+        "width": 8605800,
+        "height": 1431600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 2: “Many quasi-legendary katana were created by the hand of many famous Japanese swordsmith”. What does the prefix/word \"Quasi-\" mean?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;166;h61dc23adf5ca8e5d_1_2",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question 2",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;167;h61dc23adf5ca8e5d_1_2",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 999918,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Related to the \nMiddle Ages",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;168;h61dc23adf5ca8e5d_1_2",
+        "left": 1115575,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. A wise saying",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;169;h61dc23adf5ca8e5d_1_2",
+        "left": 4709151,
+        "top": 2815750,
+        "width": 3311550,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. The weakest or most unpleasant part of something",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          17.0
+        ]
+      },
+      {
+        "name": "Google Shape;170;h61dc23adf5ca8e5d_1_2",
+        "left": 4709150,
+        "top": 1571825,
+        "width": 3476574,
+        "height": 999918,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Used to show that something is almost, but not completely, the thing described",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          17.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 7,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;176;h61dc23adf5ca8e5d_1_38",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;179;h61dc23adf5ca8e5d_1_38",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;182;h61dc23adf5ca8e5d_1_38",
+        "left": 1688851,
+        "top": 3809048,
+        "width": 5702400,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "A. Underbelly",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      },
+      {
+        "name": "Google Shape;183;h61dc23adf5ca8e5d_1_38",
+        "left": 1026675,
+        "top": 483200,
+        "width": 7338000,
+        "height": 2553600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 3: Which term defines \"the weakest or most unpleasant part of something\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;184;h61dc23adf5ca8e5d_1_38",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question 3",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;185;h61dc23adf5ca8e5d_1_38",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Underbelly",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;186;h61dc23adf5ca8e5d_1_38",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;187;h61dc23adf5ca8e5d_1_38",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Almanac",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;188;h61dc23adf5ca8e5d_1_38",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Filament",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;189;h61dc23adf5ca8e5d_1_38",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Caravanserai",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 8,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;195;h61dc23adf5ca8e5d_1_74",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;198;h61dc23adf5ca8e5d_1_74",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;201;h61dc23adf5ca8e5d_1_74",
+        "left": 1407460,
+        "top": 3809044,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "C. Medieval",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      },
+      {
+        "name": "Google Shape;202;h61dc23adf5ca8e5d_1_74",
+        "left": 1021900,
+        "top": 506825,
+        "width": 7665000,
+        "height": 3321600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 4: Which word corresponds to \"related to the Middle Ages (= the period in European history from about AD 600 to AD 1500)\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;203;h61dc23adf5ca8e5d_1_74",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question 4",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;204;h61dc23adf5ca8e5d_1_74",
+        "left": 1156750,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Antiquity",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;205;h61dc23adf5ca8e5d_1_74",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;206;h61dc23adf5ca8e5d_1_74",
+        "left": 1156750,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Medieval",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;207;h61dc23adf5ca8e5d_1_74",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Enamored",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;208;h61dc23adf5ca8e5d_1_74",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Quasi-",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 9,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;214;h61dc23adf5ca8e5d_1_92",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;217;h61dc23adf5ca8e5d_1_92",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;220;h61dc23adf5ca8e5d_1_92",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "B. A wise saying",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      },
+      {
+        "name": "Google Shape;221;h61dc23adf5ca8e5d_1_92",
+        "left": 648125,
+        "top": 527313,
+        "width": 7783800,
+        "height": 2169600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 5: “The adage ‘Time is money’ teaches us to value our time.” What is the exact meaning of the word \"Adage\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;222;h61dc23adf5ca8e5d_1_92",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question 5",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;223;h61dc23adf5ca8e5d_1_92",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. A thin thread or fibre of natural or artificial material",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;224;h61dc23adf5ca8e5d_1_92",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;225;h61dc23adf5ca8e5d_1_92",
+        "left": 1115575,
+        "top": 2815750,
+        "width": 3298266,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. An annual publication providing various information",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          13.0
+        ]
+      },
+      {
+        "name": "Google Shape;226;h61dc23adf5ca8e5d_1_92",
+        "left": 4962025,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Marked by a great liking or admiration",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;227;h61dc23adf5ca8e5d_1_92",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. A wise saying",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 10,
+    "background": "image6.jpg",
+    "shape_count": 11,
+    "shapes": [
+      {
+        "name": "Google Shape;233;h61dc23adf5ca8e5d_1_20",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;236;h61dc23adf5ca8e5d_1_20",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;239;h61dc23adf5ca8e5d_1_20",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 831000,
+        "type": "TEXT_BOX (17)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;240;h61dc23adf5ca8e5d_1_20",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question A",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;241;h61dc23adf5ca8e5d_1_20",
+        "left": 1026675,
+        "top": 483200,
+        "width": 7338000,
+        "height": 3061500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 6: Which term describes someone or something \"marked by a great liking or admiration for something\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;242;h61dc23adf5ca8e5d_1_20",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Enamored",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;243;h61dc23adf5ca8e5d_1_20",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;244;h61dc23adf5ca8e5d_1_20",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Medieval",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;245;h61dc23adf5ca8e5d_1_20",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Filament",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;246;h61dc23adf5ca8e5d_1_20",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Antiquity",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;247;h61dc23adf5ca8e5d_1_20",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "A. Enamored",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 11,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;253;h61dc23adf5ca8e5d_1_56",
+        "left": 152436,
+        "top": 3488941,
+        "width": 1155255,
+        "height": 1559334,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;256;h61dc23adf5ca8e5d_1_56",
+        "left": 7772409,
+        "top": 3452676,
+        "width": 1219212,
+        "height": 1595597,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;259;h61dc23adf5ca8e5d_1_56",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857400,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question A",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;260;h61dc23adf5ca8e5d_1_56",
+        "left": 221150,
+        "top": 543125,
+        "width": 8840100,
+        "height": 2682000,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 7: Which publication is defined as \"an annual publication that provides a variety of information, typically related to weather forecasts, astronomical data, holidays, notable events...\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          17.0
+        ]
+      },
+      {
+        "name": "Google Shape;261;h61dc23adf5ca8e5d_1_56",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Caravanserai",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;262;h61dc23adf5ca8e5d_1_56",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;263;h61dc23adf5ca8e5d_1_56",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Almanac",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;264;h61dc23adf5ca8e5d_1_56",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Adage",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;265;h61dc23adf5ca8e5d_1_56",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Filament",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;266;h61dc23adf5ca8e5d_1_56",
+        "left": 1407460,
+        "top": 3783844,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "C. Almanac",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 12,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;272;p13",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;275;p13",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;278;p13",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question J",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;279;p13",
+        "left": 440661,
+        "top": 555925,
+        "width": 8229600,
+        "height": 2553600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 8: “The filament inside the old light bulb burned out, leaving the room in darkness.” What does the word \"Filament\" mean?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;280;p13",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3220074,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. The weakest or most unpleasant part of something",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;281;p13",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;282;p13",
+        "left": 1115575,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. An inn with a central courtyard in the desert",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;283;p13",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. A thin thread or fibre of natural or artificial material",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;284;p13",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D.  A wise saying",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0
+        ]
+      },
+      {
+        "name": "Google Shape;285;p13",
+        "left": 1420475,
+        "top": 3970250,
+        "width": 6503400,
+        "height": 708000,
+        "type": "TEXT_BOX (17)",
+        "text": "B. A thin thread or fibre of natural or artificial material",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 13,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;291;p14",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;294;p14",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;297;p14",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question K",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;298;p14",
+        "left": 903000,
+        "top": 507425,
+        "width": 7338000,
+        "height": 3061500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 9: Which of the following words means \"to suppose that something is true without having evidence to confirm it\" ?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;299;p14",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Deduce",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;300;p14",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;301;p14",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Assert",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;302;p14",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Surmise",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;303;p14",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Verify",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;304;p14",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "B. Surmise",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 14,
+    "background": "image6.jpg",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;310;p15",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;313;p15",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;316;p15",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question L",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;317;p15",
+        "left": 1026675,
+        "top": 483200,
+        "width": 7338000,
+        "height": 2553600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 10: When you want to describe a status that is \"almost, but not completely official\", what prefix should you use?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;318;p15",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "Quasi-",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 15,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;324;p16",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;327;p16",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;330;p16",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question M",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;331;p16",
+        "left": 457200,
+        "top": 684425,
+        "width": 8367000,
+        "height": 2707500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 11: Which word matches the definition \"wealthy or prosperous\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;332;p16",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Asphalt",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;333;p16",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;334;p16",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Apocryphal",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;335;p16",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Affluent",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;336;p16",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Genocide",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;337;p16",
+        "left": 1307660,
+        "top": 3809044,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "B. Affluent",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 16,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;343;p17",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;346;p17",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;349;p17",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question N",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;350;p17",
+        "left": 576925,
+        "top": 507425,
+        "width": 7813800,
+        "height": 3061500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 12: “The workers are laying a new layer of asphalt on the playground.” .What does the word \"Asphalt\" mean?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;351;p17",
+        "left": 890975,
+        "top": 1571825,
+        "width": 3418578,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. A dark, sticky substance, often mixed with small stones or sand, that forms a strong surface when hard",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          15.0
+        ]
+      },
+      {
+        "name": "Google Shape;352;p17",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;353;p17",
+        "left": 956200,
+        "top": 2815750,
+        "width": 3353346,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. The crime of intentionally destroying part or all of a national or ethnic group",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0,
+          15.0
+        ]
+      },
+      {
+        "name": "Google Shape;354;p17",
+        "left": 4844500,
+        "top": 1571825,
+        "width": 3353346,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. A place where different cultures, ideas or traditions are mixed together",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          15.0
+        ]
+      },
+      {
+        "name": "Google Shape;355;p17",
+        "left": 4844500,
+        "top": 2876350,
+        "width": 3288060,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. A journey or travel of a religious nature to a sacred destination",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          15.0
+        ]
+      },
+      {
+        "name": "Google Shape;356;p17",
+        "left": 1307650,
+        "top": 3748450,
+        "width": 6725100,
+        "height": 1610100,
+        "type": "TEXT_BOX (17)",
+        "text": "A. A dark, sticky substance, often mixed with small stones or sand, that forms a strong surface when hard",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          22.0,
+          48.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 17,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;362;p18",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;365;p18",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;368;p18",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question O",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;369;p18",
+        "left": 916625,
+        "top": 483125,
+        "width": 7246800,
+        "height": 2553600,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 13: Which term defines \"of doubtful authenticity, although widely circulated as being true\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;370;p18",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Pilgrimage",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;371;p18",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;372;p18",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Apocryphal",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;373;p18",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Melting pot",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;374;p18",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Affluent",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;375;p18",
+        "left": 1407435,
+        "top": 3748444,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "C. Apocryphal",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 18,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;381;p19",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;384;p19",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;387;p19",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question P",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;388;p19",
+        "left": 548550,
+        "top": 507425,
+        "width": 8327700,
+        "height": 3061500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 14: Which word refers to \"the crime of intentionally destroying part or all of a national, ethnic, racial, or religious group\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;389;p19",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Genocide",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;390;p19",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;391;p19",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Apocryphal",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;392;p19",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Asphalt",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;393;p19",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Melting pot",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;394;p19",
+        "left": 1026685,
+        "top": 3865869,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "A. Genocide",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 19,
+    "background": "image6.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;400;p20",
+        "left": 152400,
+        "top": 3488932,
+        "width": 1155243,
+        "height": 1559318,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;403;p20",
+        "left": 7772400,
+        "top": 3452668,
+        "width": 1219200,
+        "height": 1595582,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;406;p20",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Question Q",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;407;p20",
+        "left": 871025,
+        "top": 507425,
+        "width": 7338000,
+        "height": 3061500,
+        "type": "TEXT_BOX (17)",
+        "text": "Question 15: Which term describes \"a place where different cultures, ideas or traditions are mixed together\"?",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;408;p20",
+        "left": 1115575,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "A. Pilgrimage",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;409;p20",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;410;p20",
+        "left": 1026675,
+        "top": 2815750,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "C. Affluent",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          18.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;411;p20",
+        "left": 4962025,
+        "top": 1571825,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "B. Melting pot",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;412;p20",
+        "left": 4962025,
+        "top": 2876350,
+        "width": 3058668,
+        "height": 932688,
+        "type": "AUTO_SHAPE (1)",
+        "text": "D. Asphalt",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          20.0
+        ]
+      },
+      {
+        "name": "Google Shape;413;p20",
+        "left": 1407435,
+        "top": 3809044,
+        "width": 6265200,
+        "height": 630900,
+        "type": "TEXT_BOX (17)",
+        "text": "B. Melting pot",
+        "image": "",
+        "font_names": [
+          "Times New Roman"
+        ],
+        "font_sizes": [
+          35.0
+        ]
+      }
+    ]
+  },
+  {
+    "slide_number": 20,
+    "background": "image11.jpg",
+    "shape_count": 24,
+    "shapes": [
+      {
+        "name": "Google Shape;419;p29",
+        "left": 4649021,
+        "top": 3795280,
+        "width": 1343892,
+        "height": 1191491,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image12.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;420;p29",
+        "left": 2675877,
+        "top": 3819870,
+        "width": 1272094,
+        "height": 1142310,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image13.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;421;p29",
+        "left": 7292755,
+        "top": 3570763,
+        "width": 537487,
+        "height": 1504950,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image14.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;422;p29",
+        "left": 4979481,
+        "top": 1278992,
+        "width": 3790514,
+        "height": 429905,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image15.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;423;p29",
+        "left": 5033289,
+        "top": 1716663,
+        "width": 4186911,
+        "height": 385805,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image16.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;424;p29",
+        "left": 4851717,
+        "top": 2181391,
+        "width": 3614159,
+        "height": 429099,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image17.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;425;p29",
+        "left": 4890528,
+        "top": 2751393,
+        "width": 3970578,
+        "height": 201357,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image18.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;426;p29",
+        "left": 231228,
+        "top": 3466121,
+        "width": 1889763,
+        "height": 1689605,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image19.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;427;p29",
+        "left": 2274874,
+        "top": 3486151,
+        "width": 2147303,
+        "height": 1669576,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image20.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;428;p29",
+        "left": 6627413,
+        "top": 3486151,
+        "width": 1868173,
+        "height": 1669576,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image21.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;429;p29",
+        "left": 0,
+        "top": 361950,
+        "width": 9144000,
+        "height": 530915,
+        "type": "TEXT_BOX (17)",
+        "text": "Buy some school supplies (1 of each)…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          24.0
+        ]
+      },
+      {
+        "name": "Google Shape;430;p29",
+        "left": 304800,
+        "top": 885714,
+        "width": 1102126,
+        "height": 2471392,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image22.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;431;p29",
+        "left": 1372656,
+        "top": 931315,
+        "width": 1218144,
+        "height": 2425791,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image23.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;432;p29",
+        "left": 2438400,
+        "top": 915948,
+        "width": 1232970,
+        "height": 2425791,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image24.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;433;p29",
+        "left": 3455751,
+        "top": 931314,
+        "width": 1344849,
+        "height": 2404099,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image25.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;434;p29",
+        "left": 4649021,
+        "top": 3490749,
+        "width": 2009775,
+        "height": 1664978,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image26.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;435;p29",
+        "left": 231228,
+        "top": 1537154,
+        "width": 1011382,
+        "height": 1288473,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image27.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;436;p29",
+        "left": 3276587,
+        "top": 1534220,
+        "width": 1385454,
+        "height": 1174379,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image28.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;437;p29",
+        "left": 5943858,
+        "top": 1452121,
+        "width": 1093842,
+        "height": 1284576,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image29.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;438;p29",
+        "left": 5943858,
+        "top": 1427262,
+        "width": 1259320,
+        "height": 1324131,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image30.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;439;p29",
+        "left": 2675877,
+        "top": 1341934,
+        "width": 537487,
+        "height": 1504950,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image14.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;440;p29",
+        "left": 6456915,
+        "top": 1391735,
+        "width": 537487,
+        "height": 1504950,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image14.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;441;p29",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward C",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;442;p29",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 21,
+    "background": "image32.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;448;p30",
+        "left": 6068291,
+        "top": 1428749,
+        "width": 1400441,
+        "height": 3855770,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image33.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;449;p30",
+        "left": 1454727,
+        "top": 1289481,
+        "width": 2362200,
+        "height": 3995038,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image34.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;450;p30",
+        "left": 3311236,
+        "top": 1290993,
+        "width": 2992582,
+        "height": 3993525,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image35.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;451;p30",
+        "left": 0,
+        "top": 521553,
+        "width": 9144000,
+        "height": 769441,
+        "type": "TEXT_BOX (17)",
+        "text": "Choose your best friend…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;452;p30",
+        "left": 852055,
+        "top": 3793284,
+        "width": 3361170,
+        "height": 1068863,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image36.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;453;p30",
+        "left": 3565200,
+        "top": 3968415,
+        "width": 2484654,
+        "height": 1068863,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image37.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;454;p30",
+        "left": 5791200,
+        "top": 3968415,
+        "width": 2197957,
+        "height": 950561,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image38.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;455;p30",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward D",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;456;p30",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 22,
+    "background": "image39.gif",
+    "shape_count": 6,
+    "shapes": [
+      {
+        "name": "Google Shape;462;p32",
+        "left": -44200,
+        "top": 0,
+        "width": 9232400,
+        "height": 5143500,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image39.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;463;p32",
+        "left": 1905000,
+        "top": 3809821,
+        "width": 5334000,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "You finally get your \u000bletter from Hogwarts!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;464;p32",
+        "left": 493486,
+        "top": 3495554,
+        "width": 1335314,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image40.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;465;p32",
+        "left": 7391400,
+        "top": 3495554,
+        "width": 1349828,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image41.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;466;p32",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward F Question",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Rectangle 1",
+        "left": 8255000,
+        "top": 4572000,
+        "width": 508000,
+        "height": 508000,
+        "type": "AUTO_SHAPE (1)",
+        "text": "H",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 23,
+    "background": "image42.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;472;p33",
+        "left": -2209800,
+        "top": -1,
+        "width": 12808716,
+        "height": 5143502,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image42.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;473;p33",
+        "left": 2306781,
+        "top": 2952750,
+        "width": 4932219,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "Welcome to Hogwarts!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;474;p33",
+        "left": 3632906,
+        "top": 3486150,
+        "width": 1604112,
+        "height": 1302327,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image43.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;475;p33",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward F - A",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;476;p33",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 24,
+    "background": "image44.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;482;p34",
+        "left": -1659467,
+        "top": -933450,
+        "width": 12462934,
+        "height": 7010400,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image44.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;483;p34",
+        "left": 381001,
+        "top": 3043695,
+        "width": 3810000,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "You were caught \u000bby the Dursleys!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;484;p34",
+        "left": 914400,
+        "top": 4017487,
+        "width": 2484654,
+        "height": 1068863,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image37.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;485;p34",
+        "left": 457200,
+        "top": -1924050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward F - B",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;486;p34",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 25,
+    "background": "image45.jpg",
+    "shape_count": 11,
+    "shapes": [
+      {
+        "name": "Google Shape;492;p36",
+        "left": 155575,
+        "top": -144463,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;493;p36",
+        "left": 307975,
+        "top": 7937,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;494;p36",
+        "left": 696805,
+        "top": 1219199,
+        "width": 3195667,
+        "height": 4019551,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image46.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;495;p36",
+        "left": 6096000,
+        "top": 1386243,
+        "width": 2032950,
+        "height": 3852507,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image47.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;496;p36",
+        "left": 3304309,
+        "top": 953808,
+        "width": 2660074,
+        "height": 4284942,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image48.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;497;p36",
+        "left": 0,
+        "top": 521553,
+        "width": 9144000,
+        "height": 769441,
+        "type": "TEXT_BOX (17)",
+        "text": "Choose someone to duel…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;498;p36",
+        "left": 1788947,
+        "top": 3487637,
+        "width": 1011382,
+        "height": 1288473,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image27.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;499;p36",
+        "left": 6565554,
+        "top": 3430487,
+        "width": 1093842,
+        "height": 1284576,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image29.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;500;p36",
+        "left": 3892472,
+        "top": 3409950,
+        "width": 1339418,
+        "height": 1325649,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image49.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;501;p36",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward H",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;502;p36",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 26,
+    "background": "image11.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;508;p37",
+        "left": 3733800,
+        "top": 933266,
+        "width": 5105400,
+        "height": 790601,
+        "type": "TEXT_BOX (17)",
+        "text": "Test your luck!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          54.0
+        ]
+      },
+      {
+        "name": "Google Shape;509;p37",
+        "left": 3733800,
+        "top": 1733550,
+        "width": 5105400,
+        "height": 3041858,
+        "type": "TEXT_BOX (17)",
+        "text": "Keep the card you have or draw more for more points. But beware! If you find a bomb the game is over and you lose all your points.",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          28.0
+        ]
+      },
+      {
+        "name": "Google Shape;510;p37",
+        "left": 725109,
+        "top": 757440,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;514;p37",
+        "left": 725109,
+        "top": 757440,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;518;p37",
+        "left": 725109,
+        "top": 757440,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;522;p37",
+        "left": 725109,
+        "top": 757440,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;526;p37",
+        "left": 725109,
+        "top": 757440,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;529;p37",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward I",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;530;p37",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 27,
+    "background": "image60.gif",
+    "shape_count": 8,
+    "shapes": [
+      {
+        "name": "Google Shape;536;p38",
+        "left": -1066800,
+        "top": 0,
+        "width": 11618982,
+        "height": 5143500,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image60.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;537;p38",
+        "left": 155575,
+        "top": -144463,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;538;p38",
+        "left": 493486,
+        "top": 3495554,
+        "width": 1335314,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image40.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;539;p38",
+        "left": 7391400,
+        "top": 3495554,
+        "width": 1349828,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image41.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;540;p38",
+        "left": 2133600,
+        "top": 3809821,
+        "width": 4876800,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "Your rival challenges\u000byou to a duel.",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;541;p38",
+        "left": 307975,
+        "top": 7937,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;542;p38",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward J Question",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Rectangle 1",
+        "left": 8255000,
+        "top": 4572000,
+        "width": 508000,
+        "height": 508000,
+        "type": "AUTO_SHAPE (1)",
+        "text": "H",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 28,
+    "background": "image61.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;548;p39",
+        "left": -1600200,
+        "top": 0,
+        "width": 12756466,
+        "height": 5143500,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image61.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;549;p39",
+        "left": 173181,
+        "top": 3601819,
+        "width": 2743200,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "You lost!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;550;p39",
+        "left": 1143000,
+        "top": 3924984,
+        "width": 5043055,
+        "height": 1094510,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image62.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;551;p39",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward J - B",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;552;p39",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 29,
+    "background": "image63.gif",
+    "shape_count": 6,
+    "shapes": [
+      {
+        "name": "Google Shape;558;p40",
+        "left": 155575,
+        "top": -144463,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;559;p40",
+        "left": -1,
+        "top": -60918,
+        "width": 9144002,
+        "height": 5265336,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image63.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;560;p40",
+        "left": 753630,
+        "top": 3788887,
+        "width": 3361170,
+        "height": 1068863,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image36.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;561;p40",
+        "left": 0,
+        "top": 3449419,
+        "width": 2743200,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "You won!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;562;p40",
+        "left": 457200,
+        "top": -1022742,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward J - A",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;563;p40",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 30,
+    "background": "image64.gif",
+    "shape_count": 7,
+    "shapes": [
+      {
+        "name": "Google Shape;569;p42",
+        "left": 155575,
+        "top": -144463,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;570;p42",
+        "left": -2362200,
+        "top": -23404,
+        "width": 12165897,
+        "height": 5166904,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image64.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;571;p42",
+        "left": 2057400,
+        "top": 4019550,
+        "width": 5029200,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "Voldemort attacks!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;572;p42",
+        "left": 493486,
+        "top": 3495554,
+        "width": 1335314,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image40.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;573;p42",
+        "left": 7391400,
+        "top": 3495554,
+        "width": 1349828,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image41.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;574;p42",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward M Question",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Rectangle 1",
+        "left": 8255000,
+        "top": 4572000,
+        "width": 508000,
+        "height": 508000,
+        "type": "AUTO_SHAPE (1)",
+        "text": "H",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 31,
+    "background": "image65.gif",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;580;p43",
+        "left": 155575,
+        "top": -144463,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;581;p43",
+        "left": 307975,
+        "top": 7937,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;582;p43",
+        "left": 460375,
+        "top": 160337,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;583;p43",
+        "left": 612775,
+        "top": 312737,
+        "width": 304800,
+        "height": 304801,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;584;p43",
+        "left": -1487044,
+        "top": 0,
+        "width": 12118088,
+        "height": 5143500,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image65.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;585;p43",
+        "left": 773843,
+        "top": 3867150,
+        "width": 2197957,
+        "height": 950561,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image38.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;586;p43",
+        "left": 0,
+        "top": 3449419,
+        "width": 2743200,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "You won!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;587;p43",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward M - B",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;588;p43",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 32,
+    "background": "image66.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;594;p44",
+        "left": -1657578,
+        "top": -1,
+        "width": 12459156,
+        "height": 5143502,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image66.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;595;p44",
+        "left": 173181,
+        "top": 3601819,
+        "width": 2743200,
+        "height": 646331,
+        "type": "TEXT_BOX (17)",
+        "text": "You lost!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;596;p44",
+        "left": 935181,
+        "top": 4007427,
+        "width": 5160819,
+        "height": 1078923,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;599;p44",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward M - A",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;600;p44",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 33,
+    "background": "image68.jpg",
+    "shape_count": 20,
+    "shapes": [
+      {
+        "name": "Google Shape;606;p45",
+        "left": 4305329,
+        "top": 1582719,
+        "width": 533342,
+        "height": 1089158,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image69.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;607;p45",
+        "left": 7678819,
+        "top": 1538878,
+        "width": 818537,
+        "height": 1042794,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image27.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;608;p45",
+        "left": 2133617,
+        "top": 3313296,
+        "width": 1121283,
+        "height": 950455,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image28.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;609;p45",
+        "left": 644607,
+        "top": 1540455,
+        "width": 885274,
+        "height": 1039640,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image29.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;610;p45",
+        "left": 5722930,
+        "top": 3252697,
+        "width": 1019200,
+        "height": 1071653,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image30.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;611;p45",
+        "left": 393855,
+        "top": 3306371,
+        "width": 1087646,
+        "height": 964304,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image12.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;612;p45",
+        "left": 4305329,
+        "top": 3337956,
+        "width": 533342,
+        "height": 1089158,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image69.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;613;p45",
+        "left": 2001838,
+        "top": 1250370,
+        "width": 1753856,
+        "height": 1753856,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;616;p45",
+        "left": 7099269,
+        "top": 3052413,
+        "width": 1937962,
+        "height": 1410836,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;619;p45",
+        "left": 7236283,
+        "top": 1226824,
+        "width": 1822257,
+        "height": 1800948,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;622;p45",
+        "left": 3580144,
+        "top": 3027694,
+        "width": 1829704,
+        "height": 1753856,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;625;p45",
+        "left": 3572579,
+        "top": 1421880,
+        "width": 1937962,
+        "height": 1410836,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;628;p45",
+        "left": 63876,
+        "top": 3049696,
+        "width": 1984633,
+        "height": 1413553,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;631;p45",
+        "left": 195655,
+        "top": 1396578,
+        "width": 1937962,
+        "height": 1453580,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;634;p45",
+        "left": 5467703,
+        "top": 1365679,
+        "width": 1937962,
+        "height": 1523238,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;637;p45",
+        "left": 5244537,
+        "top": 2928750,
+        "width": 2056149,
+        "height": 1605549,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;640;p45",
+        "left": 1828800,
+        "top": 3033462,
+        "width": 1937962,
+        "height": 1523238,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;643;p45",
+        "left": 1087244,
+        "top": 666750,
+        "width": 7122932,
+        "height": 561692,
+        "type": "TEXT_BOX (17)",
+        "text": "Choose 3 classes to take…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          32.0
+        ]
+      },
+      {
+        "name": "Google Shape;644;p45",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward N",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;645;p45",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 34,
+    "background": "image75.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;651;p47",
+        "left": 3276600,
+        "top": 1477879,
+        "width": 2863914,
+        "height": 4027567,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image76.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;652;p47",
+        "left": 5791200,
+        "top": 1809750,
+        "width": 2557462,
+        "height": 3409950,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image77.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;653;p47",
+        "left": 162873,
+        "top": 1809750,
+        "width": 2769704,
+        "height": 3810000,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;656;p47",
+        "left": 0,
+        "top": 521553,
+        "width": 9144000,
+        "height": 769441,
+        "type": "TEXT_BOX (17)",
+        "text": "Choose your pet owl…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;657;p47",
+        "left": 4544291,
+        "top": 1410338,
+        "width": 1385454,
+        "height": 1174379,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image28.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;658;p47",
+        "left": 609600,
+        "top": 1071484,
+        "width": 1259320,
+        "height": 1324131,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image30.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;659;p47",
+        "left": 7844198,
+        "top": 1714576,
+        "width": 1008927,
+        "height": 1362077,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image80.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;660;p47",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward P",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;661;p47",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 35,
+    "background": "image11.jpg",
+    "shape_count": 10,
+    "shapes": [
+      {
+        "name": "Google Shape;667;p50",
+        "left": 3733800,
+        "top": 933266,
+        "width": 5105400,
+        "height": 790601,
+        "type": "TEXT_BOX (17)",
+        "text": "Test your luck!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          54.0
+        ]
+      },
+      {
+        "name": "Google Shape;668;p50",
+        "left": 3733800,
+        "top": 1733550,
+        "width": 5105400,
+        "height": 3041858,
+        "type": "TEXT_BOX (17)",
+        "text": "Keep the card you have or draw more for more points. But beware! If you find a bomb the game is over and you lose all your points.",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          28.0
+        ]
+      },
+      {
+        "name": "Google Shape;669;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;673;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;677;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;681;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;685;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;689;p50",
+        "left": 711684,
+        "top": 767331,
+        "width": 2590800,
+        "height": 3689587,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;692;p50",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward T",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;693;p50",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 36,
+    "background": "image86.jpg",
+    "shape_count": 38,
+    "shapes": [
+      {
+        "name": "Google Shape;699;p51",
+        "left": 3582071,
+        "top": 2621892,
+        "width": 629474,
+        "height": 640566,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image87.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;700;p51",
+        "left": 1045981,
+        "top": 1203902,
+        "width": 629474,
+        "height": 640566,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image87.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;701;p51",
+        "left": 6213226,
+        "top": 2748367,
+        "width": 427802,
+        "height": 545008,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image88.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;702;p51",
+        "left": 2301951,
+        "top": 2772498,
+        "width": 586029,
+        "height": 496747,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image28.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;703;p51",
+        "left": 3591827,
+        "top": 1286763,
+        "width": 462681,
+        "height": 543359,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image29.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;704;p51",
+        "left": 4916072,
+        "top": 2740826,
+        "width": 532676,
+        "height": 560090,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image30.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;705;p51",
+        "left": 6142902,
+        "top": 1292335,
+        "width": 568449,
+        "height": 503985,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image12.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;706;p51",
+        "left": 7427650,
+        "top": 1286763,
+        "width": 586029,
+        "height": 496747,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image28.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;707;p51",
+        "left": 1082201,
+        "top": 2749192,
+        "width": 462681,
+        "height": 543359,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image29.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;708;p51",
+        "left": 12680144,
+        "top": 3105150,
+        "width": 3505200,
+        "height": 4621042,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image89.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;709;p51",
+        "left": -5644,
+        "top": 433685,
+        "width": 9144000,
+        "height": 461665,
+        "type": "TEXT_BOX (17)",
+        "text": "Cast Wingardium Leviosa on 3 bowls to reveal your points…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          24.0
+        ]
+      },
+      {
+        "name": "Google Shape;710;p51",
+        "left": 792332,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "1",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;711;p51",
+        "left": 2038633,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "2",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;712;p51",
+        "left": 3320058,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "3",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;713;p51",
+        "left": 4601483,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "4",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;714;p51",
+        "left": 5882908,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "5",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;715;p51",
+        "left": 7164331,
+        "top": 1852940,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "6",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;716;p51",
+        "left": 792332,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "7",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;717;p51",
+        "left": 2038633,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "8",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;718;p51",
+        "left": 3320058,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "9",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;719;p51",
+        "left": 4601483,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "10",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;720;p51",
+        "left": 5882908,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "11",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;721;p51",
+        "left": 7164331,
+        "top": 3282775,
+        "width": 1112668,
+        "height": 215444,
+        "type": "TEXT_BOX (17)",
+        "text": "12",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          8.0
+        ]
+      },
+      {
+        "name": "Google Shape;722;p51",
+        "left": 3544948,
+        "top": 3257310,
+        "width": 2901922,
+        "height": 5180038,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;725;p51",
+        "left": 722084,
+        "top": 2583000,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;726;p51",
+        "left": 2003509,
+        "top": 2583000,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;727;p51",
+        "left": 3284934,
+        "top": 2583001,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;728;p51",
+        "left": 4566359,
+        "top": 2583000,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;729;p51",
+        "left": 5847784,
+        "top": 2583000,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;730;p51",
+        "left": 7129207,
+        "top": 2583000,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;731;p51",
+        "left": 722084,
+        "top": 1144693,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;732;p51",
+        "left": 2003509,
+        "top": 1144694,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;733;p51",
+        "left": 3284934,
+        "top": 1144694,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;734;p51",
+        "left": 4566359,
+        "top": 1144694,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;735;p51",
+        "left": 5847784,
+        "top": 1144694,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;736;p51",
+        "left": 7129207,
+        "top": 1144694,
+        "width": 1182916,
+        "height": 699774,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image91.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;737;p51",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward U",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;738;p51",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 37,
+    "background": "image92.gif",
+    "shape_count": 6,
+    "shapes": [
+      {
+        "name": "Google Shape;744;p52",
+        "left": -644681,
+        "top": -1,
+        "width": 10433362,
+        "height": 5143502,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image92.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;745;p52",
+        "left": 1981200,
+        "top": 3809821,
+        "width": 5181600,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "You find a hippogriff\u000bin the forest.",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;746;p52",
+        "left": 493486,
+        "top": 3495554,
+        "width": 1335314,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image40.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;747;p52",
+        "left": 7391400,
+        "top": 3495554,
+        "width": 1349828,
+        "height": 1365813,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image41.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;748;p52",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward W Question",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Rectangle 1",
+        "left": 8255000,
+        "top": 4572000,
+        "width": 508000,
+        "height": 508000,
+        "type": "AUTO_SHAPE (1)",
+        "text": "H",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 38,
+    "background": "image93.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;754;p53",
+        "left": -304800,
+        "top": -12519,
+        "width": 12358997,
+        "height": 5156019,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image93.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;755;p53",
+        "left": 228600,
+        "top": 2555300,
+        "width": 3095748,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "It sees you \u000bas a friend!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;756;p53",
+        "left": 892876,
+        "top": 3638550,
+        "width": 1343892,
+        "height": 1191491,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image12.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;757;p53",
+        "left": 457200,
+        "top": -1085850,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward W - A",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;758;p53",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 39,
+    "background": "image94.gif",
+    "shape_count": 5,
+    "shapes": [
+      {
+        "name": "Google Shape;764;p54",
+        "left": -2146866,
+        "top": 0,
+        "width": 13437732,
+        "height": 5143500,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image94.gif",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;765;p54",
+        "left": 1905000,
+        "top": 3790950,
+        "width": 3484420,
+        "height": 1200329,
+        "type": "TEXT_BOX (17)",
+        "text": "It sees you \u000bas an enemy!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          36.0
+        ]
+      },
+      {
+        "name": "Google Shape;766;p54",
+        "left": 5029200,
+        "top": 3665629,
+        "width": 1339418,
+        "height": 1325649,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image49.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;767;p54",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward W - B",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;768;p54",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 40,
+    "background": "image95.jpg",
+    "shape_count": 18,
+    "shapes": [
+      {
+        "name": "Google Shape;774;p56",
+        "left": -507744,
+        "top": -476250,
+        "width": 5995728,
+        "height": 5951826,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image96.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;775;p56",
+        "left": 4336471,
+        "top": 1129048,
+        "width": 6202456,
+        "height": 4114800,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image97.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;776;p56",
+        "left": 4038600,
+        "top": 388263,
+        "width": 4876800,
+        "height": 430887,
+        "type": "TEXT_BOX (17)",
+        "text": "Catch the golden snitch for 10pts!",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          22.0
+        ]
+      },
+      {
+        "name": "Google Shape;777;p56",
+        "left": 457200,
+        "top": -1009650,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward B, K, Q, V",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;778;p56",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;779;p56",
+        "left": -61946,
+        "top": 71404,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;780;p56",
+        "left": -40680,
+        "top": 92670,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;781;p56",
+        "left": -51313,
+        "top": 71404,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;782;p56",
+        "left": -51313,
+        "top": 60771,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;783;p56",
+        "left": -61946,
+        "top": 50138,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;784;p56",
+        "left": -72579,
+        "top": 39505,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;785;p56",
+        "left": -72579,
+        "top": 7606,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;786;p56",
+        "left": -61946,
+        "top": 50138,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;787;p56",
+        "left": -61946,
+        "top": 50138,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;788;p56",
+        "left": -93845,
+        "top": 50138,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;789;p56",
+        "left": -61946,
+        "top": 50138,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;790;p56",
+        "left": -72579,
+        "top": 71404,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;791;p56",
+        "left": -72579,
+        "top": 82037,
+        "width": 4993680,
+        "height": 4993680,
+        "type": "AUTO_SHAPE (1)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 41,
+    "background": "image98.jpg",
+    "shape_count": 58,
+    "shapes": [
+      {
+        "name": "Google Shape;797;p55",
+        "left": 730249,
+        "top": 637790,
+        "width": 466882,
+        "height": 596052,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image99.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;798;p55",
+        "left": 2469047,
+        "top": 2127234,
+        "width": 495335,
+        "height": 596053,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image100.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;799;p55",
+        "left": 4191633,
+        "top": 4344319,
+        "width": 480591,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image101.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;800;p55",
+        "left": 4192277,
+        "top": 655904,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;801;p55",
+        "left": 3335334,
+        "top": 4344319,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;802;p55",
+        "left": 2477063,
+        "top": 3606956,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;803;p55",
+        "left": 2477063,
+        "top": 655904,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;804;p55",
+        "left": 1623395,
+        "top": 2883731,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;805;p55",
+        "left": 4192277,
+        "top": 1386317,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;806;p55",
+        "left": 3335334,
+        "top": 2127294,
+        "width": 479303,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image102.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;807;p55",
+        "left": 723395,
+        "top": 2127294,
+        "width": 480591,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image101.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;808;p55",
+        "left": 723395,
+        "top": 3606956,
+        "width": 480591,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image101.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;809;p55",
+        "left": 2476419,
+        "top": 2883731,
+        "width": 480591,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image101.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;810;p55",
+        "left": 3334690,
+        "top": 655904,
+        "width": 480591,
+        "height": 595933,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image101.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;811;p55",
+        "left": 1615379,
+        "top": 2127234,
+        "width": 495335,
+        "height": 596053,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image100.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;812;p55",
+        "left": 4184261,
+        "top": 2883671,
+        "width": 495335,
+        "height": 596053,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image100.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;813;p55",
+        "left": 3341544,
+        "top": 1386257,
+        "width": 466882,
+        "height": 596052,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image99.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;814;p55",
+        "left": 1629605,
+        "top": 4344259,
+        "width": 466882,
+        "height": 596052,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image99.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;815;p55",
+        "left": 3326767,
+        "top": 3583035,
+        "width": 456073,
+        "height": 597620,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image103.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;816;p55",
+        "left": 722841,
+        "top": 2865378,
+        "width": 456073,
+        "height": 597620,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image103.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;817;p55",
+        "left": 1623995,
+        "top": 1385473,
+        "width": 456073,
+        "height": 597620,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image103.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;818;p55",
+        "left": 533400,
+        "top": 608604,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;821;p55",
+        "left": 1425588,
+        "top": 590550,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;824;p55",
+        "left": 2285284,
+        "top": 590550,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;827;p55",
+        "left": 3144980,
+        "top": 590550,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;830;p55",
+        "left": 4004677,
+        "top": 590550,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;833;p55",
+        "left": 533400,
+        "top": 1330381,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;836;p55",
+        "left": 1425588,
+        "top": 1330381,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;839;p55",
+        "left": 2285284,
+        "top": 1330381,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;842;p55",
+        "left": 3144980,
+        "top": 1330381,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;845;p55",
+        "left": 4004677,
+        "top": 1330381,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;848;p55",
+        "left": 533400,
+        "top": 2070212,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;851;p55",
+        "left": 1425588,
+        "top": 2070212,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;854;p55",
+        "left": 2285284,
+        "top": 2070212,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;857;p55",
+        "left": 3144980,
+        "top": 2070212,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;860;p55",
+        "left": 4004677,
+        "top": 2070212,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;863;p55",
+        "left": 533400,
+        "top": 2810043,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;866;p55",
+        "left": 1425588,
+        "top": 2810043,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;869;p55",
+        "left": 2285284,
+        "top": 2810043,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;872;p55",
+        "left": 3144980,
+        "top": 2810043,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;875;p55",
+        "left": 4004677,
+        "top": 2810043,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;878;p55",
+        "left": 533400,
+        "top": 3549874,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;881;p55",
+        "left": 1425588,
+        "top": 3549874,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;884;p55",
+        "left": 2285284,
+        "top": 3549874,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;887;p55",
+        "left": 3144980,
+        "top": 3549874,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;890;p55",
+        "left": 4004677,
+        "top": 3549874,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;893;p55",
+        "left": 533400,
+        "top": 4289705,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;896;p55",
+        "left": 1425588,
+        "top": 4289705,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;899;p55",
+        "left": 2285284,
+        "top": 4289705,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;902;p55",
+        "left": 3144980,
+        "top": 4289705,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;905;p55",
+        "left": 4004677,
+        "top": 4289705,
+        "width": 802560,
+        "height": 743311,
+        "type": "GROUP (6)",
+        "text": "",
+        "image": "",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;908;p55",
+        "left": -4244183,
+        "top": 881627,
+        "width": 466882,
+        "height": 596052,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image99.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;909;p55",
+        "left": 4977881,
+        "top": 4050543,
+        "width": 4071937,
+        "height": 877888,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image105.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;910;p55",
+        "left": 457200,
+        "top": -1162050,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward X",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;911;p55",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;912;p55",
+        "left": -30026,
+        "top": 567877,
+        "width": 719137,
+        "height": 4614862,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image106.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;913;p55",
+        "left": 641070,
+        "top": -34448,
+        "width": 4090987,
+        "height": 901700,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image107.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;914;p55",
+        "left": 5870718,
+        "top": 2407145,
+        "width": 2133600,
+        "height": 945954,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image108.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  },
+  {
+    "slide_number": 42,
+    "background": "image109.jpg",
+    "shape_count": 9,
+    "shapes": [
+      {
+        "name": "Google Shape;920;p49",
+        "left": 5231569,
+        "top": 2579996,
+        "width": 2998031,
+        "height": 2506354,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image110.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;921;p49",
+        "left": 990600,
+        "top": 3033785,
+        "width": 1864414,
+        "height": 2052565,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image111.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;922;p49",
+        "left": 3081508,
+        "top": 1141867,
+        "width": 2971800,
+        "height": 3783837,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image112.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;923;p49",
+        "left": 0,
+        "top": 521553,
+        "width": 9144000,
+        "height": 769441,
+        "type": "TEXT_BOX (17)",
+        "text": "Choose your Patronus…",
+        "image": "",
+        "font_names": [
+          "Arial"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;924;p49",
+        "left": 7218218,
+        "top": 1935759,
+        "width": 1011382,
+        "height": 1288473,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image27.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;925;p49",
+        "left": 2555035,
+        "top": 1802832,
+        "width": 1343892,
+        "height": 1191491,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image12.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;926;p49",
+        "left": 533400,
+        "top": 2359116,
+        "width": 1143000,
+        "height": 1270414,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image113.png",
+        "font_names": [],
+        "font_sizes": []
+      },
+      {
+        "name": "Google Shape;927;p49",
+        "left": 457200,
+        "top": -933450,
+        "width": 8229600,
+        "height": 857250,
+        "type": "PLACEHOLDER (14)",
+        "text": "Reward S",
+        "image": "",
+        "font_names": [
+          "Calibri"
+        ],
+        "font_sizes": [
+          44.0
+        ]
+      },
+      {
+        "name": "Google Shape;928;p49",
+        "left": 8665090,
+        "top": 4698868,
+        "width": 311282,
+        "height": 311282,
+        "type": "PICTURE (13)",
+        "text": "",
+        "image": "image31.png",
+        "font_names": [],
+        "font_sizes": []
+      }
+    ]
+  }
+]

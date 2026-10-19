@@ -140,11 +140,42 @@
           <!-- Populated by JavaScript -->
         </div>
 
-        <!-- Open-ended container for Q10 (Clean and uncluttered) -->
+        <!-- Open-ended container for Q10 (Centered Review & Confirmation) -->
         <div id="q-openended-container" class="openended-layout" style="display:none;">
-          <button id="btn-reveal-answer" class="btn-reveal-pill" title="Reveal the official answer">
-            👁 CLICK TO REVEAL ANSWER
+          <!-- Pre-reveal state: Button to reveal official answer -->
+          <button id="btn-reveal-answer" class="btn-reveal-pill" title="Xem đáp án chính thức (Space / Click)">
+            <span class="btn-icon">👁</span> XEM ĐÁP ÁN (REVEAL ANSWER)
           </button>
+
+          <!-- Post-reveal state: Centered Review Card & Confirmation Buttons -->
+          <div id="q-openended-review-box" class="openended-review-card" style="display: none;">
+            <div class="review-badge-header">
+              <span class="sparkle-icon">✨</span> ĐÁP ÁN CHÍNH THỨC / OFFICIAL ANSWER <span class="sparkle-icon">✨</span>
+            </div>
+            
+            <div class="review-main-answer">
+              <span id="review-answer-text" class="review-answer-text">Quasi-</span>
+            </div>
+
+            <div id="review-confirm-section" class="review-confirm-section">
+              <p class="review-confirm-prompt">Xác nhận kết quả của người chơi:</p>
+              <div class="review-confirm-actions">
+                <button id="btn-confirm-correct" class="btn-confirm-choice btn-confirm-correct" title="Xác nhận người chơi trả lời ĐÚNG (Hotkey: Y / 1 / Enter)">
+                  <span class="confirm-icon">✔</span>
+                  <span class="confirm-label">ĐÚNG (CORRECT)</span>
+                  <span class="confirm-hotkey">[Y / 1]</span>
+                </button>
+                <button id="btn-confirm-wrong" class="btn-confirm-choice btn-confirm-wrong" title="Xác nhận người chơi trả lời SAI (Hotkey: N / 2 / Backspace)">
+                  <span class="confirm-icon">✖</span>
+                  <span class="confirm-label">SAI (WRONG)</span>
+                  <span class="confirm-hotkey">[N / 2]</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Post-confirmation status (Shown when answered or returning from penalty) -->
+            <div id="review-status-badge" class="review-status-badge" style="display: none;"></div>
+          </div>
         </div>
 
         <!-- Bottom Black Horizontal Divider Line -->
@@ -179,35 +210,104 @@
       </div>
     </section>
 
-    <!-- PENALTY SCREEN (Hiệu ứng Slide Hình Phạt khi trả lời sai) -->
-    <section id="screen-penalty" class="game-screen penalty-screen-overlay">
-      <div class="penalty-modal-card">
-        <div class="penalty-media-box">
-          <img id="penalty-gif" src="assets/image44.gif" alt="Penalty GIF" class="penalty-gif-img">
-          <div class="penalty-dark-overlay"></div>
+    <!-- PENALTY SCREEN (Hiệu ứng Slide Hình Phạt khi trả lời sai - CHỈ PHÁT GIF TO, CHỮ GIỮA GIF) -->
+    <section id="screen-penalty" class="game-screen penalty-screen-overlay" title="Click anywhere or press Space to proceed">
+      <div class="cinema-gif-card penalty-cinema-card">
+        <img id="penalty-gif" src="assets/image44.gif" alt="Penalty GIF" class="cinema-gif-img">
+        <div class="cinema-gif-scrim penalty-scrim"></div>
+        <div class="cinema-center-content">
+          <h1 id="penalty-title" class="cinema-center-title penalty-text">Team A Defeat</h1>
         </div>
-        <div class="penalty-info-box">
-          <div class="penalty-flourish">⚡ ⚡ ⚡</div>
-          <h2 id="penalty-title" class="penalty-title">INCORRECT ANSWER!</h2>
-          <p id="penalty-subtitle" class="penalty-subtitle">You were caught by the Dursleys!</p>
-          <div class="penalty-badge-container">
-            <img id="penalty-pts-img" src="assets/image37.png" alt="Penalty Points" class="penalty-pts-graphic">
-          </div>
-          <p id="penalty-team-msg" class="penalty-team-msg">Team A lost turn & 1 point penalty!</p>
-          <div class="penalty-actions">
-            <button id="btn-penalty-return" class="penalty-action-btn primary" title="Return to Question Board">
-              <img src="assets/image31.png" alt="Return">
-              <span>RETURN TO BOARD</span>
-            </button>
-            <button id="btn-penalty-retry" class="penalty-action-btn secondary" title="Let other team steal or retry">
-              <span>ALLOW STEAL / RETRY</span>
-            </button>
+        <div class="cinema-progress-wrapper">
+          <div id="penalty-progress-bar" class="penalty-progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VICTORY SCREEN (Hiệu ứng Slide Chiến Thắng khi trả lời đúng - CHỈ PHÁT GIF TO, CHỮ GIỮA GIF) -->
+    <section id="screen-victory" class="game-screen victory-screen-overlay" title="Click anywhere or press Space to proceed">
+      <div class="cinema-gif-card victory-cinema-card">
+        <img id="victory-gif" src="assets/image42.gif" alt="Victory GIF" class="cinema-gif-img">
+        <div class="cinema-gif-scrim victory-scrim"></div>
+        <div class="cinema-center-content">
+          <h1 id="victory-title" class="cinema-center-title victory-text">Team A Victory</h1>
+        </div>
+        <div class="cinema-progress-wrapper">
+          <div id="victory-progress-bar" class="victory-progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN: A OR B PENALTY MINIGAME TRIAL (Slide 22, 27, 30, 37) -->
+    <section id="screen-ab-penalty" class="game-screen ab-penalty-screen">
+      <div class="ab-penalty-stage">
+        <!-- Full-bleed Scene GIF -->
+        <img id="ab-bg-gif" src="assets/image39.gif" alt="A/B Penalty Challenge" class="ab-bg-gif-img">
+        <div class="ab-scene-scrim"></div>
+
+        <!-- Center Prompt Overlay -->
+        <div class="ab-prompt-panel">
+          <div class="ab-flourish">⚡ A / B PENALTY TRIAL ⚡</div>
+          <h2 id="ab-prompt-title" class="ab-prompt-title">You finally get your letter from Hogwarts!</h2>
+          <p class="ab-prompt-instruction">Choose circle A or B: 1 is SAFE (0 pts), 1 is CAUGHT (-2 pts)!</p>
+        </div>
+
+        <!-- Interactive Circle A (Bottom Left) -->
+        <button id="btn-ab-choice-a" class="ab-circle-btn ab-circle-btn-a" data-choice="A" title="Choose Option A (Hotkey: A)">
+          <img src="assets/image40.png" alt="Circle A" class="ab-circle-graphic">
+        </button>
+
+        <!-- Interactive Circle B (Bottom Right) -->
+        <button id="btn-ab-choice-b" class="ab-circle-btn ab-circle-btn-b" data-choice="B" title="Choose Option B (Hotkey: B)">
+          <img src="assets/image41.png" alt="Circle B" class="ab-circle-graphic">
+        </button>
+
+        <!-- Outcome Card (Appears after choosing A or B) -->
+        <div id="ab-outcome-card" class="ab-outcome-card hidden">
+          <img id="ab-outcome-gif" src="assets/image42.gif" alt="Outcome GIF" class="ab-outcome-gif">
+          <div class="ab-outcome-content">
+            <h2 id="ab-outcome-headline" class="ab-outcome-headline">Welcome to Hogwarts!</h2>
+            <p id="ab-outcome-details" class="ab-outcome-details">You safely caught your Hogwarts letter! 0 Points Penalty.</p>
+            <div id="ab-outcome-badge" class="ab-outcome-badge safe">✨ SAFE: 0 PTS PENALTY ✨</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- REWARD POINTS ANNOUNCEMENT POPUP (Thông báo cộng điểm trong 5s to & rõ ràng) -->
+    <div id="reward-points-popup" class="reward-points-popup-overlay">
+      <div class="reward-points-popup-card">
+        <div class="popup-flourish">✨ ⚡ 🏆 ⚡ ✨</div>
+        <div class="popup-badge-box">
+          <img id="popup-pts-graphic" src="assets/image36.png" alt="Reward Badge" class="popup-pts-graphic">
+        </div>
+        <h2 id="popup-pts-title" class="popup-pts-title">+3 POINTS FOR TEAM A!</h2>
+        <p id="popup-pts-desc" class="popup-pts-desc">You chose Harry Potter as your best friend!</p>
+        <div class="popup-score-preview">
+          <div class="popup-team-score team-a-box">
+            <span class="p-team-label">TEAM A</span>
+            <span id="popup-score-a" class="p-team-pts">0</span>
+          </div>
+          <div class="popup-vs">VS</div>
+          <div class="popup-team-score team-b-box">
+            <span class="p-team-label">TEAM B</span>
+            <span id="popup-score-b" class="p-team-pts">0</span>
+          </div>
+        </div>
+        <div class="popup-progress-container">
+          <div id="popup-progress-bar" class="popup-progress-bar"></div>
+        </div>
+        <button id="btn-popup-return-now" class="popup-return-btn pulse">
+          <img src="assets/image31.png" alt="Return">
+          <span id="popup-btn-label">RETURN TO QUESTION BOARD (5s)</span>
+        </button>
+      </div>
+    </div>
+
   </div>
+
+  <!-- Background Music Player (Hedwig's Song - Plays throughout, auto loops) -->
+  <audio id="bgm-audio" loop preload="auto" src="assets/Harry%20Potter%20Hedwig%20s%20Song%20HQ.mp3"></audio>
 
   <!-- Scripts -->
   <script src="src/js/audio.js"></script>
